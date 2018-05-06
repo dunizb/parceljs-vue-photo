@@ -48,6 +48,9 @@ a{
         width: 49.60% !important;
         height: 49.60% !important;
         margin-bottom: 2px;
+        .img-box{
+          height: 150px;
+        }
         .names{
           .main-name{
             display:none;

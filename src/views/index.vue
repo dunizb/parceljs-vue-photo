@@ -1,9 +1,12 @@
 <template>
   <main>
     <div class="wrapper">
-      <div class="box" v-for="item in albumList" :key="item.url">
+      <div class="box" v-for="item in albumList" 
+        :key="item.id"
+        @click="showList(item.id)">
         <div class="img-box">
           <img :src="item.url" alt="照片">
+          <span class="count">{{item.list.length}}</span>
         </div>
         <div class="names">
           <div class="main-name">{{item.title}}</div>
@@ -58,6 +61,9 @@ export default {
         }, 500);
       }
       count++;
+    },
+    showList(id) {
+      this.$router.push('list/' + id);
     }
   }
 }
@@ -82,8 +88,16 @@ main{
     height: 33%;
     margin-bottom: 5px;
     background-color: #fff;
+    padding: 5px 5px 0 5px;
     .img-box{
-      max-height: 161px;
+      position: relative;
+      .count {
+        position: absolute;
+        right: 10px;
+        bottom: 10px;
+        color: #fff;
+        font-size: 25px;
+      }
     }
     .names{
       text-align: center;
@@ -92,6 +106,9 @@ main{
         font-size: 13px;
         font-weight: 300;
       }
+    }
+    &:hover{
+      cursor: pointer;
     }
   }
 }
@@ -112,7 +129,6 @@ main{
 img{
   width: 100%;
   height: 100%;
-  min-height: 161px;
 }
 </style>
 

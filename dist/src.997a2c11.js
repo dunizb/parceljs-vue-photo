@@ -9834,21 +9834,17 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 exports.default = [{
-  title: "云南",
+  id: "1",
+  title: "相册1",
   subTitle: "大理·丽江·泸沽湖",
-  url: "http://img1.ph.126.net/VXdZ6QJh-uq4GTr9ILExOQ==/6632284925074459408.jpg"
-}, {
-  title: "天津",
-  subTitle: "天津",
-  url: "http://img2.ph.126.net/tF0vYe-AuxnpF2n6v3NCIA==/1872653020156324688.jpg"
-}, {
-  title: "北京",
-  subTitle: "故宫·八达岭长城·颐和园",
-  url: "http://img2.ph.126.net/ypuq6DoIvjBNvm33-GDP3w==/6598164880239625367.jpg"
-}, {
-  title: "杭州",
-  subTitle: "杭州与西湖",
-  url: "https://img2.ph.126.net/ehOOvZNDc5cIhulgXbagaw==/1067353111786839398.jpg"
+  url: "https://thumbnail10.baidupcs.com/thumbnail/8f8e19ae42addfdff73980c53b5bcc40?fid=1510528803-250528-154259415507334&time=1525622400&rt=sh&sign=FDTAER-DCb740ccc5511e5e8fedcff06b081203-xRT%2BgL8GruzsFw93dKaZWUcFucc%3D&expires=8h&chkv=0&chkbd=0&chkpc=&dp-logid=2922789798549355172&dp-callid=0&size=c10000_u10000&quality=90&vuk=-&ft=video",
+  list: [{
+    title: "丽江古城一角",
+    url: "https://thumbnail10.baidupcs.com/thumbnail/8f8e19ae42addfdff73980c53b5bcc40?fid=1510528803-250528-154259415507334&time=1525622400&rt=sh&sign=FDTAER-DCb740ccc5511e5e8fedcff06b081203-xRT%2BgL8GruzsFw93dKaZWUcFucc%3D&expires=8h&chkv=0&chkbd=0&chkpc=&dp-logid=2922789798549355172&dp-callid=0&size=c10000_u10000&quality=90&vuk=-&ft=video"
+  }, {
+    title: "丽江古城一角",
+    url: "https://thumbnail10.baidupcs.com/thumbnail/5c3f1b639e0c5a2b07d11e0b377c7bb2?fid=1510528803-250528-538930992184900&time=1525622400&rt=sh&sign=FDTAER-DCb740ccc5511e5e8fedcff06b081203-SYjKdHBrT%2BTSU7JclKebkj18JQ0%3D&expires=8h&chkv=0&chkbd=0&chkpc=&dp-logid=2922909868532051414&dp-callid=0&size=c10000_u10000&quality=90&vuk=-&ft=video"
+  }]
 }];
 },{}],12:[function(require,module,exports) {
 var Vue // late bind
@@ -10137,7 +10133,7 @@ if (module.hot) {
   })();
 }
 },{"vueify/lib/insert-css":16,"vue-hot-reload-api":12,"vue":6}],13:[function(require,module,exports) {
-var __vueify_style_dispose__ = require("vueify/lib/insert-css").insert("/* line 68, stdin */\nmain[data-v-7f9713cb] {\n  margin-top: 10px; }\n\n/* line 72, stdin */\n.wrapper[data-v-7f9713cb] {\n  display: flex;\n  justify-content: space-between;\n  flex-wrap: wrap;\n  max-width: 1020px;\n  margin: 0 auto; }\n  /* line 78, stdin */\n  .wrapper .box[data-v-7f9713cb] {\n    display: flex;\n    flex-direction: column;\n    width: 33%;\n    height: 33%;\n    margin-bottom: 5px;\n    background-color: #fff; }\n    /* line 85, stdin */\n    .wrapper .box .img-box[data-v-7f9713cb] {\n      max-height: 161px; }\n    /* line 88, stdin */\n    .wrapper .box .names[data-v-7f9713cb] {\n      text-align: center;\n      font-size: 14px; }\n      /* line 91, stdin */\n      .wrapper .box .names .name[data-v-7f9713cb] {\n        font-size: 13px;\n        font-weight: 300; }\n\n/* line 99, stdin */\n.progress-wrapper[data-v-7f9713cb] {\n  position: fixed;\n  top: 0;\n  left: 0;\n  right: 0;\n  bottom: 0;\n  z-index: 100;\n  background-color: #fff;\n  display: flex;\n  flex-direction: column;\n  justify-content: center; }\n\n/* line 112, stdin */\nimg[data-v-7f9713cb] {\n  width: 100%;\n  height: 100%;\n  min-height: 161px; }");(function () {
+var __vueify_style_dispose__ = require("vueify/lib/insert-css").insert("/* line 74, stdin */\nmain[data-v-7f9713cb] {\n  margin-top: 10px; }\n\n/* line 78, stdin */\n.wrapper[data-v-7f9713cb] {\n  display: flex;\n  justify-content: space-between;\n  flex-wrap: wrap;\n  max-width: 1020px;\n  margin: 0 auto; }\n  /* line 84, stdin */\n  .wrapper .box[data-v-7f9713cb] {\n    display: flex;\n    flex-direction: column;\n    width: 33%;\n    height: 33%;\n    margin-bottom: 5px;\n    background-color: #fff;\n    padding: 5px 5px 0 5px; }\n    /* line 92, stdin */\n    .wrapper .box .img-box[data-v-7f9713cb] {\n      position: relative; }\n      /* line 94, stdin */\n      .wrapper .box .img-box .count[data-v-7f9713cb] {\n        position: absolute;\n        right: 10px;\n        bottom: 10px;\n        color: #fff;\n        font-size: 25px; }\n    /* line 102, stdin */\n    .wrapper .box .names[data-v-7f9713cb] {\n      text-align: center;\n      font-size: 14px; }\n      /* line 105, stdin */\n      .wrapper .box .names .name[data-v-7f9713cb] {\n        font-size: 13px;\n        font-weight: 300; }\n    /* line 110, stdin */\n    .wrapper .box[data-v-7f9713cb]:hover {\n      cursor: pointer; }\n\n/* line 116, stdin */\n.progress-wrapper[data-v-7f9713cb] {\n  position: fixed;\n  top: 0;\n  left: 0;\n  right: 0;\n  bottom: 0;\n  z-index: 100;\n  background-color: #fff;\n  display: flex;\n  flex-direction: column;\n  justify-content: center; }\n\n/* line 129, stdin */\nimg[data-v-7f9713cb] {\n  width: 100%;\n  height: 100%; }");(function () {
   'use strict';
 
   Object.defineProperty(exports, "__esModule", {
@@ -10196,6 +10192,9 @@ var __vueify_style_dispose__ = require("vueify/lib/insert-css").insert("/* line 
           }, 500);
         }
         count++;
+      },
+      showList: function showList(id) {
+        this.$router.push('list/' + id);
       }
     }
   };
@@ -10207,7 +10206,9 @@ if (__vue__options__.functional) {
 }
 __vue__options__.render = function render() {
   var _vm = this;var _h = _vm.$createElement;var _c = _vm._self._c || _h;return _c('main', [_c('div', { staticClass: "wrapper" }, _vm._l(_vm.albumList, function (item) {
-    return _c('div', { key: item.url, staticClass: "box" }, [_c('div', { staticClass: "img-box" }, [_c('img', { attrs: { "src": item.url, "alt": "照片" } })]), _vm._v(" "), _c('div', { staticClass: "names" }, [_c('div', { staticClass: "main-name" }, [_vm._v(_vm._s(item.title))]), _vm._v(" "), _c('div', { staticClass: "name" }, [_vm._v(_vm._s(item.subTitle))])])]);
+    return _c('div', { key: item.id, staticClass: "box", on: { "click": function click($event) {
+          _vm.showList(item.id);
+        } } }, [_c('div', { staticClass: "img-box" }, [_c('img', { attrs: { "src": item.url, "alt": "照片" } }), _vm._v(" "), _c('span', { staticClass: "count" }, [_vm._v(_vm._s(item.list.length))])]), _vm._v(" "), _c('div', { staticClass: "names" }, [_c('div', { staticClass: "main-name" }, [_vm._v(_vm._s(item.title))]), _vm._v(" "), _c('div', { staticClass: "name" }, [_vm._v(_vm._s(item.subTitle))])])]);
   })), _vm._v(" "), _c('div', { directives: [{ name: "show", rawName: "v-show", value: _vm.isShowProgress, expression: "isShowProgress" }], staticClass: "progress-wrapper" }, [_c('Progress', { attrs: { "value": _vm.value } })], 1)]);
 };
 __vue__options__.staticRenderFns = [];
@@ -10222,7 +10223,7 @@ if (module.hot) {
     if (!module.hot.data) {
       hotAPI.createRecord("data-v-7f9713cb", __vue__options__);
     } else {
-      hotAPI.rerender("data-v-7f9713cb", __vue__options__);
+      hotAPI.reload("data-v-7f9713cb", __vue__options__);
     }
   })();
 }
@@ -10302,7 +10303,7 @@ if (module.hot) {
   })();
 }
 },{"vueify/lib/insert-css":16,"vue-hot-reload-api":12,"vue":6}],10:[function(require,module,exports) {
-var __vueify_style_dispose__ = require("vueify/lib/insert-css").insert("/* line 15, stdin */\nfooter {\n  margin: 40px;\n  text-align: center;\n  color: #eee;\n  font-size: 14px;\n  font-weight: 100;\n  position: relative; }\n  /* line 22, stdin */\n  footer::after {\n    content: ' ';\n    position: absolute;\n    width: 50%;\n    height: 10px;\n    top: -10px;\n    left: 50%;\n    margin-left: -25%;\n    border-top: 1px dotted #999; }\n\n/* line 33, stdin */\na {\n  color: #fff;\n  text-decoration: none; }\n\n/***** iPad Mini *****/\n@media only screen and (max-width: 768px) {\n  /* line 40, stdin */\n  header {\n    padding: 0 3px; }\n  /* line 43, stdin */\n  main {\n    margin-top: 0; }\n    /* line 45, stdin */\n    main .wrapper {\n      padding: 2px 2px 0 2px; }\n      /* line 47, stdin */\n      main .wrapper .box {\n        width: 49.60% !important;\n        height: 49.60% !important;\n        margin-bottom: 2px; }\n        /* line 52, stdin */\n        main .wrapper .box .names .main-name {\n          display: none; }\n        /* line 55, stdin */\n        main .wrapper .box .names .name {\n          font-size: 12px !important; }\n  /* line 63, stdin */\n  footer {\n    font-size: 10px; } }");(function () {
+var __vueify_style_dispose__ = require("vueify/lib/insert-css").insert("/* line 15, stdin */\nfooter {\n  margin: 40px;\n  text-align: center;\n  color: #eee;\n  font-size: 14px;\n  font-weight: 100;\n  position: relative; }\n  /* line 22, stdin */\n  footer::after {\n    content: ' ';\n    position: absolute;\n    width: 50%;\n    height: 10px;\n    top: -10px;\n    left: 50%;\n    margin-left: -25%;\n    border-top: 1px dotted #999; }\n\n/* line 33, stdin */\na {\n  color: #fff;\n  text-decoration: none; }\n\n/***** iPad Mini *****/\n@media only screen and (max-width: 768px) {\n  /* line 40, stdin */\n  header {\n    padding: 0 3px; }\n  /* line 43, stdin */\n  main {\n    margin-top: 0; }\n    /* line 45, stdin */\n    main .wrapper {\n      padding: 2px 2px 0 2px; }\n      /* line 47, stdin */\n      main .wrapper .box {\n        width: 49.60% !important;\n        height: 49.60% !important;\n        margin-bottom: 2px; }\n        /* line 51, stdin */\n        main .wrapper .box .img-box {\n          height: 150px; }\n        /* line 55, stdin */\n        main .wrapper .box .names .main-name {\n          display: none; }\n        /* line 58, stdin */\n        main .wrapper .box .names .name {\n          font-size: 12px !important; }\n  /* line 66, stdin */\n  footer {\n    font-size: 10px; } }");(function () {
   'use strict';
 
   Object.defineProperty(exports, "__esModule", {
