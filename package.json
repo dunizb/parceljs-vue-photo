@@ -1,0 +1,22 @@
+{
+  "name": "photos",
+  "version": "1.0.0",
+  "description": "我的相册，旅游观光照片",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "Parcel",
+    "Photo",
+    "云南",
+    "大理",
+    "丽江",
+    "泸沽湖"
+  ],
+  "author": "Dunizb",
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^4.9.0"
+  }
+}
