@@ -1,41 +1,63 @@
 <template>
   <main>
     <div class="wrapper">
-      <div class="box">
-        <img src="http://img1.ph.126.net/VXdZ6QJh-uq4GTr9ILExOQ==/6632284925074459408.jpg" alt="照片">
+      <div class="box" v-for="item in albumList" :key="item.url">
+        <img :src="item.url" alt="照片">
         <div class="names">
-          <div class="main-name">彩云之南</div>
-          <div class="name">大理·丽江·泸沽湖</div>
-        </div>
-      </div>
-      <div class="box">
-        <img src="http://img1.ph.126.net/VXdZ6QJh-uq4GTr9ILExOQ==/6632284925074459408.jpg" alt="照片">
-        <div class="names">
-          <div class="main-name">彩云之南</div>
-          <div class="name">大理·丽江·泸沽湖</div>
-        </div>
-      </div>
-      <div class="box">
-        <img src="http://img1.ph.126.net/VXdZ6QJh-uq4GTr9ILExOQ==/6632284925074459408.jpg" alt="照片">
-        <div class="names">
-          <div class="main-name">彩云之南</div>
-          <div class="name">大理·丽江·泸沽湖</div>
-        </div>
-      </div>
-      <div class="box">
-        <img src="http://img1.ph.126.net/VXdZ6QJh-uq4GTr9ILExOQ==/6632284925074459408.jpg" alt="照片">
-        <div class="names">
-          <div class="main-name">彩云之南</div>
-          <div class="name">大理·丽江·泸沽湖</div>
+          <div class="main-name">{{item.title}}</div>
+          <div class="name">{{item.subTitle}}</div>
         </div>
       </div>
     </div>
+
+    <div class="progress-wrapper" v-show="isShowProgress">
+      <Progress :value="value" />
+    </div>
+    
   </main>
 </template>
 
 <script>
+import albumData from '../common/js/albumData.js'
+import Progress from '../components/progress/progress.vue'
+
+let count = 0;
+
 export default {
-  name: 'Index'
+  name: 'Index',
+  components: { 
+    Progress
+  },
+  data() {
+    return {
+      albumList: albumData,
+      value: 0,
+      isShowProgress: true
+    }
+  },
+  created() {
+    this.loadAlbums();
+  },
+  methods: {
+    loadAlbums() {
+      this.albumList.forEach(item => {
+        var imgObj = new Image();
+        imgObj.addEventListener('load error', this._handler());
+        imgObj.src = item.url;
+      });
+    },
+    _handler() {
+      this.value = Math.round(((count + 1)/this.albumList.length) * 100);
+      // 所有图片加载完毕
+      if(count >= this.albumList.length - 1) {
+        setTimeout(() => {
+          this.isShowProgress = false;
+          this.count = 0;
+        }, 500);
+      }
+      count++;
+    }
+  }
 }
 </script>
 
@@ -67,6 +89,19 @@ main{
       }
     }
   }
+}
+
+.progress-wrapper {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 100;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 img{

@@ -11,7 +11,7 @@
   }
 </script>
 
-<style lang="scss" scoped>
+<style lang="scss">
 footer{
   margin: 40px;
   text-align: center;
@@ -49,9 +49,11 @@ a{
         height: 49.60% !important;
         margin-bottom: 2px;
         .names{
-          font-size: 14px;
+          .main-name{
+            display:none;
+          }
           .name{
-            font-size: 10px;
+            font-size: 12px !important;
           }
         }
       }
