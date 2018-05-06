@@ -4,6 +4,8 @@
   "description": "我的相册，旅游观光照片",
   "main": "index.js",
   "scripts": {
+    "dev": "parcel index.html",
+    "build": "parcel build index.html --public-url /",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
@@ -18,11 +20,15 @@
   "author": "Dunizb",
   "license": "ISC",
   "devDependencies": {
-    "node-sass": "^4.9.0"
+    "autoprefixer": "^8.4.1",
+    "node-sass": "^4.9.0",
+    "parcel-bundler": "^1.8.1",
+    "postcss-modules": "^1.1.0"
   },
   "dependencies": {
     "babel-preset-env": "^1.6.1",
-    "less": "^3.0.2",
-    "parcel-plugin-vue": "^1.5.0"
+    "parcel-plugin-vue": "^1.5.0",
+    "vue": "^2.5.16",
+    "vue-router": "^3.0.1"
   }
 }
