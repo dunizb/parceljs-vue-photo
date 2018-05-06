@@ -63,6 +63,15 @@ export default {
       count++;
     },
     showList(id) {
+      const albumList = this.albumList;
+      let list = []
+      for(let i = 0; i < albumList.length; i++) {
+        if(albumList[i].id === id) {
+          list = albumList[i].list;
+          break;
+        }
+      }
+      sessionStorage.setItem('dunizb.com_photo_list', JSON.stringify(list))
       this.$router.push('list/' + id);
     }
   }
