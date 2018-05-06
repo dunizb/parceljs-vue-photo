@@ -81,7 +81,7 @@ export default {
 
 <style lang="scss" scoped>
 main{
-  margin-top: 10px;
+  padding-top: 45px;
 }
  
 .wrapper{

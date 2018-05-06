@@ -39,6 +39,9 @@ a{
 @media only screen and (max-width : 768px) { 
   header{
     padding: 0 3px;
+    ul {
+      margin-right: 0;
+    }
   }
   main{
     margin-top: 0;

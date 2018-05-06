@@ -11,6 +11,11 @@ body{
   font: 14px 'microsoft yahei';
   background-color: black;
   font-weight: 500;
+  -webkit-overflow-scrolling: touch;
+}
+
+body::-webkit-scrollbar {
+  width: 0;
 }
 
 .fade-enter-active, .fade-leave-active{

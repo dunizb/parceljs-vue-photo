@@ -37,6 +37,8 @@ header {
   background-color: rgba(0,0,0,.3);
   color: #fff;
   padding: 0 20px;
+  position: fixed;
+  width: 100%;
   h1{
     font-size: 24px;
     margin: 0;
@@ -52,6 +54,7 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-right: 30px;
     li {
       list-style: none;
       padding: 0 5px;
@@ -60,6 +63,7 @@ header {
         text-decoration: none;
         font-weight: 300;
         font-size: 14px;
+        font-family: Arial, Helvetica, sans-serif;
       }
     }
   }
