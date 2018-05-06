@@ -68,7 +68,7 @@ require = (function (modules, cache, entry) {
 
   // Override the current require with this new one
   return newRequire;
-})({8:[function(require,module,exports) {
+})({6:[function(require,module,exports) {
 var global = arguments[3];
 'use strict';
 
@@ -7349,7 +7349,7 @@ if (inBrowser) {
 /*  */
 
 exports.default = Vue;
-},{}],13:[function(require,module,exports) {
+},{}],7:[function(require,module,exports) {
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -9827,7 +9827,7 @@ exports.insert = function (css) {
   }
 }
 
-},{}],14:[function(require,module,exports) {
+},{}],12:[function(require,module,exports) {
 var Vue // late bind
 var version
 var map = (window.__VUE_HOT_MAP__ = Object.create(null))
@@ -10069,8 +10069,8 @@ exports.reload = tryWrap(function (id, options) {
   })
 })
 
-},{}],22:[function(require,module,exports) {
-var __vueify_style_dispose__ = require("vueify/lib/insert-css").insert("main{\n  margin-top: 10px;\n}\nmain .wrapper{\n  display: flex;\n  justify-content: space-between;\n  flex-wrap: wrap;\n  max-width: 1020px;\n  margin: 0 auto;\n}\nmain .wrapper .box{\n  width: 33%;\n  height: 33%;\n  margin-bottom: 5px;\n  background-color: #fff;\n}\n.box .names{\n  text-align: center;\n  font-size: 14px;\n}\n.box .names .name{\n  font-size: 13px;\n  font-weight: 300;\n}\n.box img{\n  width: 100%;\n  height: 100%;\n}");
+},{}],13:[function(require,module,exports) {
+var __vueify_style_dispose__ = require("vueify/lib/insert-css").insert("/* line 37, stdin */\nmain[data-v-7f9713cb] {\n  margin-top: 10px; }\n\n/* line 40, stdin */\nmain .wrapper[data-v-7f9713cb] {\n  display: flex;\n  justify-content: space-between;\n  flex-wrap: wrap;\n  max-width: 1020px;\n  margin: 0 auto; }\n\n/* line 47, stdin */\nmain .wrapper .box[data-v-7f9713cb] {\n  display: flex;\n  flex-direction: column;\n  width: 33%;\n  height: 33%;\n  margin-bottom: 5px;\n  background-color: #fff; }\n\n/* line 55, stdin */\n.box .names[data-v-7f9713cb] {\n  text-align: center;\n  font-size: 14px; }\n\n/* line 59, stdin */\n.box .names .name[data-v-7f9713cb] {\n  font-size: 13px;\n  font-weight: 300; }\n\n/* line 63, stdin */\n.box img[data-v-7f9713cb] {\n  width: 100%;\n  height: 100%; }");
 var __vue__options__ = typeof module.exports === "function" ? module.exports.options : module.exports;
 if (__vue__options__.functional) {
   console.error("[vueify] functional components are not supported and should be defined in plain js files using render functions.");
@@ -10081,6 +10081,7 @@ __vue__options__.render = function render() {
 __vue__options__.staticRenderFns = [function render() {
   var _vm = this;var _h = _vm.$createElement;var _c = _vm._self._c || _h;return _c('main', [_c('div', { staticClass: "wrapper" }, [_c('div', { staticClass: "box" }, [_c('img', { attrs: { "src": "http://img1.ph.126.net/VXdZ6QJh-uq4GTr9ILExOQ==/6632284925074459408.jpg", "alt": "照片" } }), _vm._v(" "), _c('div', { staticClass: "names" }, [_c('div', { staticClass: "main-name" }, [_vm._v("彩云之南")]), _vm._v(" "), _c('div', { staticClass: "name" }, [_vm._v("大理·丽江·泸沽湖")])])]), _vm._v(" "), _c('div', { staticClass: "box" }, [_c('img', { attrs: { "src": "http://img1.ph.126.net/VXdZ6QJh-uq4GTr9ILExOQ==/6632284925074459408.jpg", "alt": "照片" } }), _vm._v(" "), _c('div', { staticClass: "names" }, [_c('div', { staticClass: "main-name" }, [_vm._v("彩云之南")]), _vm._v(" "), _c('div', { staticClass: "name" }, [_vm._v("大理·丽江·泸沽湖")])])]), _vm._v(" "), _c('div', { staticClass: "box" }, [_c('img', { attrs: { "src": "http://img1.ph.126.net/VXdZ6QJh-uq4GTr9ILExOQ==/6632284925074459408.jpg", "alt": "照片" } }), _vm._v(" "), _c('div', { staticClass: "names" }, [_c('div', { staticClass: "main-name" }, [_vm._v("彩云之南")]), _vm._v(" "), _c('div', { staticClass: "name" }, [_vm._v("大理·丽江·泸沽湖")])])]), _vm._v(" "), _c('div', { staticClass: "box" }, [_c('img', { attrs: { "src": "http://img1.ph.126.net/VXdZ6QJh-uq4GTr9ILExOQ==/6632284925074459408.jpg", "alt": "照片" } }), _vm._v(" "), _c('div', { staticClass: "names" }, [_c('div', { staticClass: "main-name" }, [_vm._v("彩云之南")]), _vm._v(" "), _c('div', { staticClass: "name" }, [_vm._v("大理·丽江·泸沽湖")])])])])]);
 }];
+__vue__options__._scopeId = "data-v-7f9713cb";
 if (module.hot) {
   (function () {
     var hotAPI = require("vue-hot-reload-api");
@@ -10091,11 +10092,11 @@ if (module.hot) {
     if (!module.hot.data) {
       hotAPI.createRecord("data-v-7f9713cb", __vue__options__);
     } else {
-      hotAPI.reload("data-v-7f9713cb", __vue__options__);
+      hotAPI.rerender("data-v-7f9713cb", __vue__options__);
     }
   })();
 }
-},{"vueify/lib/insert-css":16,"vue-hot-reload-api":14,"vue":8}],9:[function(require,module,exports) {
+},{"vueify/lib/insert-css":16,"vue-hot-reload-api":12,"vue":6}],8:[function(require,module,exports) {
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -10112,7 +10113,7 @@ exports.default = [{
   path: '/',
   component: _index2.default
 }];
-},{"../views/index.vue":22}],6:[function(require,module,exports) {
+},{"../views/index.vue":13}],4:[function(require,module,exports) {
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -10134,7 +10135,7 @@ exports.default = function () {
     routes: _routers2.default
   });
 };
-},{"vue-router":13,"./routers.js":9}],19:[function(require,module,exports) {
+},{"vue-router":7,"./routers.js":8}],9:[function(require,module,exports) {
 var __vueify_style_dispose__ = require("vueify/lib/insert-css").insert("header {\n    display: flex;\n    justify-content: space-between;\n    text-align: center;\n    background-color: rgba(0,0,0,.3);\n    color: #fff;\n    padding: 0 20px;\n}\nheader h1{\n    font-size: 24px;\n    margin: 0;\n    padding: 0;\n    text-shadow: 1px 1px 3px #fff;\n}\nheader ul{\n    padding: 0;\n    margin: 0;\n    display: flex;\n    justify-content: center;\n    align-items: center;\n}\nheader ul li{\n    list-style: none;\n    padding: 0 5px;\n}\nheader ul li a{\n    color: #fff;\n    text-decoration: none;\n    font-weight: 300;\n    font-size: 14px;\n}");(function () {
   'use strict';
 
@@ -10170,8 +10171,8 @@ if (module.hot) {
     }
   })();
 }
-},{"vueify/lib/insert-css":16,"vue-hot-reload-api":14,"vue":8}],20:[function(require,module,exports) {
-var __vueify_style_dispose__ = require("vueify/lib/insert-css").insert("footer{\n    margin: 40px;\n    text-align: center;\n    color: #eee;\n    font-size: 14px;\n    font-weight: 100;\n    position: relative;\n}\nfooter a{\n    color: #fff;\n    text-decoration: none;\n}\nfooter::after{\n    content: ' ';\n    position: absolute;\n    width: 50%;\n    height: 10px;\n    top: -10px;\n    left: 50%;\n    margin-left: -25%;\n    border-top: 1px dotted #999;\n}\n\n/***** iPad Mini *****/\n@media only screen and (max-width : 768px) { \n    header{\n        padding: 0 3px;\n    }\n    main{\n        margin-top: 0;\n    }\n    main .wrapper{\n        background-color: #fff;\n        padding: 2px 2px 0 2px;\n    }\n    main .wrapper .box{\n        background-color: #000;\n        width: 49.60%;\n        color: #fff;\n        margin-bottom: 2px;\n    }\n    .box .names{\n        font-size: 14px;\n    }\n    .box .names .name{\n        font-size: 10px;\n    }\n    footer{font-size: 10px;}\n}");
+},{"vueify/lib/insert-css":16,"vue-hot-reload-api":12,"vue":6}],10:[function(require,module,exports) {
+var __vueify_style_dispose__ = require("vueify/lib/insert-css").insert("footer{\n    margin: 40px;\n    text-align: center;\n    color: #eee;\n    font-size: 14px;\n    font-weight: 100;\n    position: relative;\n}\nfooter a{\n    color: #fff;\n    text-decoration: none;\n}\nfooter::after{\n    content: ' ';\n    position: absolute;\n    width: 50%;\n    height: 10px;\n    top: -10px;\n    left: 50%;\n    margin-left: -25%;\n    border-top: 1px dotted #999;\n}\n\n/***** iPad Mini *****/\n@media only screen and (max-width : 768px) { \n    header{\n        padding: 0 3px;\n    }\n    main{\n        margin-top: 0;\n    }\n    main .wrapper{\n        /* background-color: #fff; */\n        padding: 2px 2px 0 2px;\n    }\n    main .wrapper .box{\n        width: 49.60% !important;\n        height: 49.60% !important;\n        margin-bottom: 2px;\n    }\n    .box .names{\n      font-size: 14px;\n    }\n    .box .names .name{\n        font-size: 10px;\n    }\n    footer{font-size: 10px;}\n}");
 var __vue__options__ = typeof module.exports === "function" ? module.exports.options : module.exports;
 if (__vue__options__.functional) {
     console.error("[vueify] functional components are not supported and should be defined in plain js files using render functions.");
@@ -10192,11 +10193,11 @@ if (module.hot) {
         if (!module.hot.data) {
             hotAPI.createRecord("data-v-429715fa", __vue__options__);
         } else {
-            hotAPI.reload("data-v-429715fa", __vue__options__);
+            hotAPI.rerender("data-v-429715fa", __vue__options__);
         }
     })();
 }
-},{"vueify/lib/insert-css":16,"vue-hot-reload-api":14,"vue":8}],5:[function(require,module,exports) {
+},{"vueify/lib/insert-css":16,"vue-hot-reload-api":12,"vue":6}],3:[function(require,module,exports) {
 ;(function () {
   'use strict';
 
@@ -10245,7 +10246,7 @@ if (module.hot) {
     }
   })();
 }
-},{"./layout/header.vue":19,"./layout/footer.vue":20,"vue-hot-reload-api":14,"vue":8}],15:[function(require,module,exports) {
+},{"./layout/header.vue":9,"./layout/footer.vue":10,"vue-hot-reload-api":12,"vue":6}],15:[function(require,module,exports) {
 var bundleURL = null;
 function getBundleURLCached() {
   if (!bundleURL) {
@@ -10275,7 +10276,7 @@ function getBaseURL(url) {
 
 exports.getBundleURL = getBundleURLCached;
 exports.getBaseURL = getBaseURL;
-},{}],12:[function(require,module,exports) {
+},{}],11:[function(require,module,exports) {
 var bundle = require('./bundle-url');
 
 function updateLink(link) {
@@ -10306,13 +10307,13 @@ function reloadCSS() {
 }
 
 module.exports = reloadCSS;
-},{"./bundle-url":15}],7:[function(require,module,exports) {
+},{"./bundle-url":15}],5:[function(require,module,exports) {
 
         var reloadCSS = require('_css_loader');
         module.hot.dispose(reloadCSS);
         module.hot.accept(reloadCSS);
       
-},{"_css_loader":12}],4:[function(require,module,exports) {
+},{"_css_loader":11}],2:[function(require,module,exports) {
 'use strict';
 
 var _vue = require('vue');
@@ -10347,7 +10348,7 @@ new _vue2.default({
     return h(_app2.default);
   }
 }).$mount('#root');
-},{"vue":8,"vue-router":13,"./config/router.js":6,"./app.vue":5,"./assets/styles/global.css":7}],0:[function(require,module,exports) {
+},{"vue":6,"vue-router":7,"./config/router.js":4,"./app.vue":3,"./assets/styles/global.css":5}],0:[function(require,module,exports) {
 var global = (1, eval)('this');
 var OldModule = module.bundle.Module;
 function Module(config) {
@@ -10366,7 +10367,7 @@ function Module(config) {
 module.bundle.Module = Module;
 
 if (!module.bundle.parent && typeof WebSocket !== 'undefined') {
-  var ws = new WebSocket('ws://localhost:59719/');
+  var ws = new WebSocket('ws://localhost:49489/');
   ws.onmessage = function(event) {
     var data = JSON.parse(event.data);
 
@@ -10469,4 +10470,4 @@ function hmrAccept(bundle, id) {
     return hmrAccept(global.require, id)
   });
 }
-},{}]},{},[0,4])
+},{}]},{},[0,2])

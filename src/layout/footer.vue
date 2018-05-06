@@ -38,17 +38,16 @@ footer::after{
         margin-top: 0;
     }
     main .wrapper{
-        background-color: #fff;
+        /* background-color: #fff; */
         padding: 2px 2px 0 2px;
     }
     main .wrapper .box{
-        background-color: #000;
-        width: 49.60%;
-        color: #fff;
+        width: 49.60% !important;
+        height: 49.60% !important;
         margin-bottom: 2px;
     }
     .box .names{
-        font-size: 14px;
+      font-size: 14px;
     }
     .box .names .name{
         font-size: 10px;

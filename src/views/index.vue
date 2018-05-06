@@ -33,7 +33,7 @@
   </main>
 </template>
 
-<style>
+<style lang="scss" scoped>
 main{
   margin-top: 10px;
 }
@@ -45,6 +45,8 @@ main .wrapper{
   margin: 0 auto;
 }
 main .wrapper .box{
+  display: flex;
+  flex-direction: column;
   width: 33%;
   height: 33%;
   margin-bottom: 5px;
