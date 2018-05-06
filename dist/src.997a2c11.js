@@ -9802,7 +9802,36 @@ if (inBrowser && window.Vue) {
 }
 
 exports.default = VueRouter;
-},{}],16:[function(require,module,exports) {
+},{}],9:[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = [];
+},{}],6:[function(require,module,exports) {
+'use strict';
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _vueRouter = require('vue-router');
+
+var _vueRouter2 = _interopRequireDefault(_vueRouter);
+
+var _routers = require('./routers.js');
+
+var _routers2 = _interopRequireDefault(_routers);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+exports.default = function () {
+  return new _vueRouter2.default({
+    routes: _routers2.default
+  });
+};
+},{"vue-router":13,"./routers.js":9}],16:[function(require,module,exports) {
 var inserted = exports.cache = {}
 
 function noop () {}
@@ -10069,14 +10098,16 @@ exports.reload = tryWrap(function (id, options) {
   })
 })
 
-},{}],10:[function(require,module,exports) {
-var __vueify_style_dispose__ = require("vueify/lib/insert-css").insert(".main-header {\n    display: flex;\n    justify-content: space-between;\n    text-align: center;\n    background-color: rgba(0,0,0,.3);\n    color: #fff;\n    padding: 0 20px;\n}\n.main-header h1{\n    font-size: 24px;\n    margin: 0;\n    padding: 0;\n    text-shadow: 1px 1px 3px #fff;\n}\nheader ul{\n    padding: 0;\n    margin: 0;\n    display: flex;\n    justify-content: center;\n    align-items: center;\n}\n.main-header ul li{\n    list-style: none;\n    padding: 0 5px;\n}\n.main-header ul li a{\n    color: #fff;\n    text-decoration: none;\n    font-weight: 300;\n    font-size: 14px;\n}");(function () {
-  "use strict";
+},{}],19:[function(require,module,exports) {
+var __vueify_style_dispose__ = require("vueify/lib/insert-css").insert("header {\n    display: flex;\n    justify-content: space-between;\n    text-align: center;\n    background-color: rgba(0,0,0,.3);\n    color: #fff;\n    padding: 0 20px;\n}\nheader h1{\n    font-size: 24px;\n    margin: 0;\n    padding: 0;\n    text-shadow: 1px 1px 3px #fff;\n}\nheader ul{\n    padding: 0;\n    margin: 0;\n    display: flex;\n    justify-content: center;\n    align-items: center;\n}\nheader ul li{\n    list-style: none;\n    padding: 0 5px;\n}\nheader ul li a{\n    color: #fff;\n    text-decoration: none;\n    font-weight: 300;\n    font-size: 14px;\n}");(function () {
+  'use strict';
 
   Object.defineProperty(exports, "__esModule", {
     value: true
   });
-  exports.default = {};
+  exports.default = {
+    name: 'Header'
+  };
 })();
 if (module.exports.__esModule) module.exports = module.exports.default;
 var __vue__options__ = typeof module.exports === "function" ? module.exports.options : module.exports;
@@ -10087,7 +10118,7 @@ __vue__options__.render = function render() {
   var _vm = this;var _h = _vm.$createElement;var _c = _vm._self._c || _h;return _vm._m(0);
 };
 __vue__options__.staticRenderFns = [function render() {
-  var _vm = this;var _h = _vm.$createElement;var _c = _vm._self._c || _h;return _c('div', { staticClass: "main-header" }, [_c('h1', [_vm._v("Photo")]), _vm._v(" "), _c('ul', [_c('li', [_c('a', { attrs: { "href": "https://github.com/dunizb/VueTodo" } }, [_vm._v("源码")])]), _vm._v(" "), _c('li', [_c('a', { attrs: { "href": "https://www.dunizb.com" } }, [_vm._v("博客")])]), _vm._v(" "), _c('li', [_c('a', { attrs: { "href": "https://store.dunizb.com" } }, [_vm._v("小铺")])]), _vm._v(" "), _c('li', [_c('a', { attrs: { "href": "https://demo.dunizb.com" } }, [_vm._v("小码")])]), _vm._v(" "), _c('li', [_c('a', { attrs: { "href": "https://blog.dunizb.com/about/" } }, [_vm._v("关于我")])])])]);
+  var _vm = this;var _h = _vm.$createElement;var _c = _vm._self._c || _h;return _c('header', [_c('h1', [_vm._v("Photo")]), _vm._v(" "), _c('ul', [_c('li', [_c('a', { attrs: { "href": "https://github.com/dunizb/VueTodo" } }, [_vm._v("源码")])]), _vm._v(" "), _c('li', [_c('a', { attrs: { "href": "https://www.dunizb.com" } }, [_vm._v("博客")])]), _vm._v(" "), _c('li', [_c('a', { attrs: { "href": "https://store.dunizb.com" } }, [_vm._v("小铺")])]), _vm._v(" "), _c('li', [_c('a', { attrs: { "href": "https://demo.dunizb.com" } }, [_vm._v("小码")])]), _vm._v(" "), _c('li', [_c('a', { attrs: { "href": "https://blog.dunizb.com/about/" } }, [_vm._v("关于我")])])])]);
 }];
 if (module.hot) {
   (function () {
@@ -10097,52 +10128,39 @@ if (module.hot) {
     module.hot.accept();
     module.hot.dispose(__vueify_style_dispose__);
     if (!module.hot.data) {
-      hotAPI.createRecord("data-v-817c7d38", __vue__options__);
+      hotAPI.createRecord("data-v-63c979ec", __vue__options__);
     } else {
-      hotAPI.reload("data-v-817c7d38", __vue__options__);
+      hotAPI.reload("data-v-63c979ec", __vue__options__);
     }
   })();
 }
-},{"vueify/lib/insert-css":16,"vue-hot-reload-api":14,"vue":8}],9:[function(require,module,exports) {
-'use strict';
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-
-var _header = require('../views/header.vue');
-
-var _header2 = _interopRequireDefault(_header);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-exports.default = [{
-  path: '/',
-  component: _header2.default
-}];
-},{"../views/header.vue":10}],6:[function(require,module,exports) {
-'use strict';
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-
-var _vueRouter = require('vue-router');
-
-var _vueRouter2 = _interopRequireDefault(_vueRouter);
-
-var _routers = require('./routers.js');
-
-var _routers2 = _interopRequireDefault(_routers);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-exports.default = function () {
-  return new _vueRouter2.default({
-    routes: _routers2.default
-  });
+},{"vueify/lib/insert-css":16,"vue-hot-reload-api":14,"vue":8}],20:[function(require,module,exports) {
+var __vueify_style_dispose__ = require("vueify/lib/insert-css").insert("footer{\n    margin: 40px;\n    text-align: center;\n    color: #eee;\n    font-size: 14px;\n    font-weight: 100;\n    position: relative;\n}\nfooter a{\n    color: #fff;\n    text-decoration: none;\n}\nfooter::after{\n    content: ' ';\n    position: absolute;\n    width: 50%;\n    height: 10px;\n    top: -10px;\n    left: 50%;\n    margin-left: -25%;\n    border-top: 1px dotted #999;\n}\n\n/***** iPad Mini *****/\n@media only screen and (max-width : 768px) { \n    header{\n        padding: 0 3px;\n    }\n    main{\n        margin-top: 0;\n    }\n    main .wrapper{\n        background-color: #fff;\n        padding: 2px 2px 0 2px;\n    }\n    main .wrapper .box{\n        background-color: #000;\n        width: 49.60%;\n        color: #fff;\n        margin-bottom: 2px;\n    }\n    .box .names{\n        font-size: 14px;\n    }\n    .box .names .name{\n        font-size: 10px;\n    }\n    footer{font-size: 10px;}\n}");
+var __vue__options__ = typeof module.exports === "function" ? module.exports.options : module.exports;
+if (__vue__options__.functional) {
+    console.error("[vueify] functional components are not supported and should be defined in plain js files using render functions.");
+}
+__vue__options__.render = function render() {
+    var _vm = this;var _h = _vm.$createElement;var _c = _vm._self._c || _h;return _vm._m(0);
 };
-},{"vue-router":13,"./routers.js":9}],5:[function(require,module,exports) {
+__vue__options__.staticRenderFns = [function render() {
+    var _vm = this;var _h = _vm.$createElement;var _c = _vm._self._c || _h;return _c('footer', [_vm._v("\n  Hosted by "), _c('a', { staticStyle: { "font-weight": "bold" }, attrs: { "href": "https://pages.coding.me", "target": "_blank" } }, [_vm._v("Coding Pages")]), _vm._v(" & \n  Power by "), _c('a', { staticStyle: { "font-weight": "bold" }, attrs: { "href": "https://wwww.dunizb.com", "target": "_blank" } }, [_vm._v("Dunizb")])]);
+}];
+if (module.hot) {
+    (function () {
+        var hotAPI = require("vue-hot-reload-api");
+        hotAPI.install(require("vue"), true);
+        if (!hotAPI.compatible) return;
+        module.hot.accept();
+        module.hot.dispose(__vueify_style_dispose__);
+        if (!module.hot.data) {
+            hotAPI.createRecord("data-v-429715fa", __vue__options__);
+        } else {
+            hotAPI.reload("data-v-429715fa", __vue__options__);
+        }
+    })();
+}
+},{"vueify/lib/insert-css":16,"vue-hot-reload-api":14,"vue":8}],5:[function(require,module,exports) {
 ;(function () {
   'use strict';
 
@@ -10150,9 +10168,13 @@ exports.default = function () {
     value: true
   });
 
-  var _header = require('./views/header.vue');
+  var _header = require('./layout/header.vue');
 
   var _header2 = _interopRequireDefault(_header);
+
+  var _footer = require('./layout/footer.vue');
+
+  var _footer2 = _interopRequireDefault(_footer);
 
   function _interopRequireDefault(obj) {
     return obj && obj.__esModule ? obj : { default: obj };
@@ -10160,7 +10182,8 @@ exports.default = function () {
 
   exports.default = {
     components: {
-      VHeader: 'v-header'
+      Header: _header2.default,
+      Footer: _footer2.default
     }
   };
 })();
@@ -10170,7 +10193,7 @@ if (__vue__options__.functional) {
   console.error("[vueify] functional components are not supported and should be defined in plain js files using render functions.");
 }
 __vue__options__.render = function render() {
-  var _vm = this;var _h = _vm.$createElement;var _c = _vm._self._c || _h;return _c('div', [_c('v-header'), _vm._v(" "), _c('router-view')], 1);
+  var _vm = this;var _h = _vm.$createElement;var _c = _vm._self._c || _h;return _c('div', [_c('Header'), _vm._v(" "), _c('router-view'), _vm._v(" "), _c('Footer')], 1);
 };
 __vue__options__.staticRenderFns = [];
 if (module.hot) {
@@ -10186,7 +10209,7 @@ if (module.hot) {
     }
   })();
 }
-},{"./views/header.vue":10,"vue-hot-reload-api":14,"vue":8}],15:[function(require,module,exports) {
+},{"./layout/header.vue":19,"./layout/footer.vue":20,"vue-hot-reload-api":14,"vue":8}],15:[function(require,module,exports) {
 var bundleURL = null;
 function getBundleURLCached() {
   if (!bundleURL) {

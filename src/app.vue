@@ -1,15 +1,18 @@
 <template>
   <div>
-    <v-header />
+    <Header />
     <router-view />
+    <Footer />
   </div>
 </template>
 
 <script>
-import VHeader from './views/header.vue'
+import Header from './layout/header.vue'
+import Footer from './layout/footer.vue'
 export default {
   components: {
-    VHeader: 'v-header'
+    Header,
+    Footer
   }
 }
 </script>

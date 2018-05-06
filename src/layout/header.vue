@@ -1,5 +1,5 @@
 <template>
-  <div class="main-header">
+  <header>
     <h1>Photo</h1>
     <ul>
       <li>
@@ -18,15 +18,17 @@
         <a href="https://blog.dunizb.com/about/">关于我</a>
       </li>
     </ul>
-  </div>
+  </header>
 </template>
 
 <script>
-  export default {}
+  export default {
+    name: 'Header'
+  }
 </script>
 
 <style>
-.main-header {
+header {
     display: flex;
     justify-content: space-between;
     text-align: center;
@@ -34,7 +36,7 @@
     color: #fff;
     padding: 0 20px;
 }
-.main-header h1{
+header h1{
     font-size: 24px;
     margin: 0;
     padding: 0;
@@ -47,11 +49,11 @@ header ul{
     justify-content: center;
     align-items: center;
 }
-.main-header ul li{
+header ul li{
     list-style: none;
     padding: 0 5px;
 }
-.main-header ul li a{
+header ul li a{
     color: #fff;
     text-decoration: none;
     font-weight: 300;
