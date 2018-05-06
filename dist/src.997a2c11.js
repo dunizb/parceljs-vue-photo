@@ -10070,7 +10070,17 @@ exports.reload = tryWrap(function (id, options) {
 })
 
 },{}],13:[function(require,module,exports) {
-var __vueify_style_dispose__ = require("vueify/lib/insert-css").insert("/* line 37, stdin */\nmain[data-v-7f9713cb] {\n  margin-top: 10px; }\n\n/* line 40, stdin */\nmain .wrapper[data-v-7f9713cb] {\n  display: flex;\n  justify-content: space-between;\n  flex-wrap: wrap;\n  max-width: 1020px;\n  margin: 0 auto; }\n\n/* line 47, stdin */\nmain .wrapper .box[data-v-7f9713cb] {\n  display: flex;\n  flex-direction: column;\n  width: 33%;\n  height: 33%;\n  margin-bottom: 5px;\n  background-color: #fff; }\n\n/* line 55, stdin */\n.box .names[data-v-7f9713cb] {\n  text-align: center;\n  font-size: 14px; }\n\n/* line 59, stdin */\n.box .names .name[data-v-7f9713cb] {\n  font-size: 13px;\n  font-weight: 300; }\n\n/* line 63, stdin */\n.box img[data-v-7f9713cb] {\n  width: 100%;\n  height: 100%; }");
+var __vueify_style_dispose__ = require("vueify/lib/insert-css").insert("/* line 44, stdin */\nmain[data-v-7f9713cb] {\n  margin-top: 10px; }\n\n/* line 48, stdin */\n.wrapper[data-v-7f9713cb] {\n  display: flex;\n  justify-content: space-between;\n  flex-wrap: wrap;\n  max-width: 1020px;\n  margin: 0 auto; }\n  /* line 54, stdin */\n  .wrapper .box[data-v-7f9713cb] {\n    display: flex;\n    flex-direction: column;\n    width: 33%;\n    height: 33%;\n    margin-bottom: 5px;\n    background-color: #fff; }\n    /* line 61, stdin */\n    .wrapper .box .names[data-v-7f9713cb] {\n      text-align: center;\n      font-size: 14px; }\n      /* line 64, stdin */\n      .wrapper .box .names .name[data-v-7f9713cb] {\n        font-size: 13px;\n        font-weight: 300; }\n\n/* line 72, stdin */\nimg[data-v-7f9713cb] {\n  width: 100%;\n  height: 100%; }");(function () {
+  'use strict';
+
+  Object.defineProperty(exports, "__esModule", {
+    value: true
+  });
+  exports.default = {
+    name: 'Index'
+  };
+})();
+if (module.exports.__esModule) module.exports = module.exports.default;
 var __vue__options__ = typeof module.exports === "function" ? module.exports.options : module.exports;
 if (__vue__options__.functional) {
   console.error("[vueify] functional components are not supported and should be defined in plain js files using render functions.");
@@ -10092,7 +10102,7 @@ if (module.hot) {
     if (!module.hot.data) {
       hotAPI.createRecord("data-v-7f9713cb", __vue__options__);
     } else {
-      hotAPI.rerender("data-v-7f9713cb", __vue__options__);
+      hotAPI.reload("data-v-7f9713cb", __vue__options__);
     }
   })();
 }
@@ -10172,30 +10182,41 @@ if (module.hot) {
   })();
 }
 },{"vueify/lib/insert-css":16,"vue-hot-reload-api":12,"vue":6}],10:[function(require,module,exports) {
-var __vueify_style_dispose__ = require("vueify/lib/insert-css").insert("footer{\n    margin: 40px;\n    text-align: center;\n    color: #eee;\n    font-size: 14px;\n    font-weight: 100;\n    position: relative;\n}\nfooter a{\n    color: #fff;\n    text-decoration: none;\n}\nfooter::after{\n    content: ' ';\n    position: absolute;\n    width: 50%;\n    height: 10px;\n    top: -10px;\n    left: 50%;\n    margin-left: -25%;\n    border-top: 1px dotted #999;\n}\n\n/***** iPad Mini *****/\n@media only screen and (max-width : 768px) { \n    header{\n        padding: 0 3px;\n    }\n    main{\n        margin-top: 0;\n    }\n    main .wrapper{\n        /* background-color: #fff; */\n        padding: 2px 2px 0 2px;\n    }\n    main .wrapper .box{\n        width: 49.60% !important;\n        height: 49.60% !important;\n        margin-bottom: 2px;\n    }\n    .box .names{\n      font-size: 14px;\n    }\n    .box .names .name{\n        font-size: 10px;\n    }\n    footer{font-size: 10px;}\n}");
+var __vueify_style_dispose__ = require("vueify/lib/insert-css").insert("/* line 15, stdin */\nfooter[data-v-429715fa] {\n  margin: 40px;\n  text-align: center;\n  color: #eee;\n  font-size: 14px;\n  font-weight: 100;\n  position: relative; }\n  /* line 22, stdin */\n  footer[data-v-429715fa]::after {\n    content: ' ';\n    position: absolute;\n    width: 50%;\n    height: 10px;\n    top: -10px;\n    left: 50%;\n    margin-left: -25%;\n    border-top: 1px dotted #999; }\n\n/* line 33, stdin */\na[data-v-429715fa] {\n  color: #fff;\n  text-decoration: none; }\n\n/***** iPad Mini *****/\n@media only screen and (max-width: 768px) {\n  /* line 40, stdin */\n  header[data-v-429715fa] {\n    padding: 0 3px; }\n  /* line 43, stdin */\n  main[data-v-429715fa] {\n    margin-top: 0; }\n    /* line 45, stdin */\n    main .wrapper[data-v-429715fa] {\n      padding: 2px 2px 0 2px; }\n      /* line 47, stdin */\n      main .wrapper .box[data-v-429715fa] {\n        width: 49.60% !important;\n        height: 49.60% !important;\n        margin-bottom: 2px; }\n        /* line 51, stdin */\n        main .wrapper .box .names[data-v-429715fa] {\n          font-size: 14px; }\n          /* line 53, stdin */\n          main .wrapper .box .names .name[data-v-429715fa] {\n            font-size: 10px; }\n  /* line 61, stdin */\n  footer[data-v-429715fa] {\n    font-size: 10px; } }");(function () {
+  'use strict';
+
+  Object.defineProperty(exports, "__esModule", {
+    value: true
+  });
+  exports.default = {
+    name: 'Footer'
+  };
+})();
+if (module.exports.__esModule) module.exports = module.exports.default;
 var __vue__options__ = typeof module.exports === "function" ? module.exports.options : module.exports;
 if (__vue__options__.functional) {
-    console.error("[vueify] functional components are not supported and should be defined in plain js files using render functions.");
+  console.error("[vueify] functional components are not supported and should be defined in plain js files using render functions.");
 }
 __vue__options__.render = function render() {
-    var _vm = this;var _h = _vm.$createElement;var _c = _vm._self._c || _h;return _vm._m(0);
+  var _vm = this;var _h = _vm.$createElement;var _c = _vm._self._c || _h;return _vm._m(0);
 };
 __vue__options__.staticRenderFns = [function render() {
-    var _vm = this;var _h = _vm.$createElement;var _c = _vm._self._c || _h;return _c('footer', [_vm._v("\n  Hosted by "), _c('a', { staticStyle: { "font-weight": "bold" }, attrs: { "href": "https://pages.coding.me", "target": "_blank" } }, [_vm._v("Coding Pages")]), _vm._v(" & \n  Power by "), _c('a', { staticStyle: { "font-weight": "bold" }, attrs: { "href": "https://wwww.dunizb.com", "target": "_blank" } }, [_vm._v("Dunizb")])]);
+  var _vm = this;var _h = _vm.$createElement;var _c = _vm._self._c || _h;return _c('footer', [_vm._v("\n  Hosted by "), _c('a', { staticStyle: { "font-weight": "bold" }, attrs: { "href": "https://pages.coding.me", "target": "_blank" } }, [_vm._v("Coding Pages")]), _vm._v(" & \n  Power by "), _c('a', { staticStyle: { "font-weight": "bold" }, attrs: { "href": "https://wwww.dunizb.com", "target": "_blank" } }, [_vm._v("Dunizb")])]);
 }];
+__vue__options__._scopeId = "data-v-429715fa";
 if (module.hot) {
-    (function () {
-        var hotAPI = require("vue-hot-reload-api");
-        hotAPI.install(require("vue"), true);
-        if (!hotAPI.compatible) return;
-        module.hot.accept();
-        module.hot.dispose(__vueify_style_dispose__);
-        if (!module.hot.data) {
-            hotAPI.createRecord("data-v-429715fa", __vue__options__);
-        } else {
-            hotAPI.rerender("data-v-429715fa", __vue__options__);
-        }
-    })();
+  (function () {
+    var hotAPI = require("vue-hot-reload-api");
+    hotAPI.install(require("vue"), true);
+    if (!hotAPI.compatible) return;
+    module.hot.accept();
+    module.hot.dispose(__vueify_style_dispose__);
+    if (!module.hot.data) {
+      hotAPI.createRecord("data-v-429715fa", __vue__options__);
+    } else {
+      hotAPI.reload("data-v-429715fa", __vue__options__);
+    }
+  })();
 }
 },{"vueify/lib/insert-css":16,"vue-hot-reload-api":12,"vue":6}],3:[function(require,module,exports) {
 ;(function () {

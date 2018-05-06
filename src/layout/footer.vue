@@ -5,20 +5,21 @@
   </footer>
 </template>
 
-<style>
+<script>
+  export default {
+    name: 'Footer'
+  }
+</script>
+
+<style lang="scss" scoped>
 footer{
-    margin: 40px;
-    text-align: center;
-    color: #eee;
-    font-size: 14px;
-    font-weight: 100;
-    position: relative;
-}
-footer a{
-    color: #fff;
-    text-decoration: none;
-}
-footer::after{
+  margin: 40px;
+  text-align: center;
+  color: #eee;
+  font-size: 14px;
+  font-weight: 100;
+  position: relative;
+  &::after{
     content: ' ';
     position: absolute;
     width: 50%;
@@ -27,31 +28,36 @@ footer::after{
     left: 50%;
     margin-left: -25%;
     border-top: 1px dotted #999;
+  }
+}
+a{
+  color: #fff;
+  text-decoration: none;
 }
 
 /***** iPad Mini *****/
 @media only screen and (max-width : 768px) { 
-    header{
-        padding: 0 3px;
-    }
-    main{
-        margin-top: 0;
-    }
-    main .wrapper{
-        /* background-color: #fff; */
-        padding: 2px 2px 0 2px;
-    }
-    main .wrapper .box{
+  header{
+    padding: 0 3px;
+  }
+  main{
+    margin-top: 0;
+    .wrapper{
+      padding: 2px 2px 0 2px;
+      .box{
         width: 49.60% !important;
         height: 49.60% !important;
         margin-bottom: 2px;
+        .names{
+          font-size: 14px;
+          .name{
+            font-size: 10px;
+          }
+        }
+      }
     }
-    .box .names{
-      font-size: 14px;
-    }
-    .box .names .name{
-        font-size: 10px;
-    }
-    footer{font-size: 10px;}
+  }
+
+  footer{font-size: 10px;}
 }
 </style>
