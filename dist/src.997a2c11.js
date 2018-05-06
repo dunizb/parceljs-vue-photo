@@ -9802,36 +9802,7 @@ if (inBrowser && window.Vue) {
 }
 
 exports.default = VueRouter;
-},{}],9:[function(require,module,exports) {
-"use strict";
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports.default = [];
-},{}],6:[function(require,module,exports) {
-'use strict';
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-
-var _vueRouter = require('vue-router');
-
-var _vueRouter2 = _interopRequireDefault(_vueRouter);
-
-var _routers = require('./routers.js');
-
-var _routers2 = _interopRequireDefault(_routers);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-exports.default = function () {
-  return new _vueRouter2.default({
-    routes: _routers2.default
-  });
-};
-},{"vue-router":13,"./routers.js":9}],16:[function(require,module,exports) {
+},{}],16:[function(require,module,exports) {
 var inserted = exports.cache = {}
 
 function noop () {}
@@ -10098,7 +10069,72 @@ exports.reload = tryWrap(function (id, options) {
   })
 })
 
-},{}],19:[function(require,module,exports) {
+},{}],22:[function(require,module,exports) {
+var __vueify_style_dispose__ = require("vueify/lib/insert-css").insert("main{\n  margin-top: 10px;\n}\nmain .wrapper{\n  display: flex;\n  justify-content: space-between;\n  flex-wrap: wrap;\n  max-width: 1020px;\n  margin: 0 auto;\n}\nmain .wrapper .box{\n  width: 33%;\n  height: 33%;\n  margin-bottom: 5px;\n  background-color: #fff;\n}\n.box .names{\n  text-align: center;\n  font-size: 14px;\n}\n.box .names .name{\n  font-size: 13px;\n  font-weight: 300;\n}\n.box img{\n  width: 100%;\n  height: 100%;\n}");
+var __vue__options__ = typeof module.exports === "function" ? module.exports.options : module.exports;
+if (__vue__options__.functional) {
+  console.error("[vueify] functional components are not supported and should be defined in plain js files using render functions.");
+}
+__vue__options__.render = function render() {
+  var _vm = this;var _h = _vm.$createElement;var _c = _vm._self._c || _h;return _vm._m(0);
+};
+__vue__options__.staticRenderFns = [function render() {
+  var _vm = this;var _h = _vm.$createElement;var _c = _vm._self._c || _h;return _c('main', [_c('div', { staticClass: "wrapper" }, [_c('div', { staticClass: "box" }, [_c('img', { attrs: { "src": "http://img1.ph.126.net/VXdZ6QJh-uq4GTr9ILExOQ==/6632284925074459408.jpg", "alt": "照片" } }), _vm._v(" "), _c('div', { staticClass: "names" }, [_c('div', { staticClass: "main-name" }, [_vm._v("彩云之南")]), _vm._v(" "), _c('div', { staticClass: "name" }, [_vm._v("大理·丽江·泸沽湖")])])]), _vm._v(" "), _c('div', { staticClass: "box" }, [_c('img', { attrs: { "src": "http://img1.ph.126.net/VXdZ6QJh-uq4GTr9ILExOQ==/6632284925074459408.jpg", "alt": "照片" } }), _vm._v(" "), _c('div', { staticClass: "names" }, [_c('div', { staticClass: "main-name" }, [_vm._v("彩云之南")]), _vm._v(" "), _c('div', { staticClass: "name" }, [_vm._v("大理·丽江·泸沽湖")])])]), _vm._v(" "), _c('div', { staticClass: "box" }, [_c('img', { attrs: { "src": "http://img1.ph.126.net/VXdZ6QJh-uq4GTr9ILExOQ==/6632284925074459408.jpg", "alt": "照片" } }), _vm._v(" "), _c('div', { staticClass: "names" }, [_c('div', { staticClass: "main-name" }, [_vm._v("彩云之南")]), _vm._v(" "), _c('div', { staticClass: "name" }, [_vm._v("大理·丽江·泸沽湖")])])]), _vm._v(" "), _c('div', { staticClass: "box" }, [_c('img', { attrs: { "src": "http://img1.ph.126.net/VXdZ6QJh-uq4GTr9ILExOQ==/6632284925074459408.jpg", "alt": "照片" } }), _vm._v(" "), _c('div', { staticClass: "names" }, [_c('div', { staticClass: "main-name" }, [_vm._v("彩云之南")]), _vm._v(" "), _c('div', { staticClass: "name" }, [_vm._v("大理·丽江·泸沽湖")])])])])]);
+}];
+if (module.hot) {
+  (function () {
+    var hotAPI = require("vue-hot-reload-api");
+    hotAPI.install(require("vue"), true);
+    if (!hotAPI.compatible) return;
+    module.hot.accept();
+    module.hot.dispose(__vueify_style_dispose__);
+    if (!module.hot.data) {
+      hotAPI.createRecord("data-v-7f9713cb", __vue__options__);
+    } else {
+      hotAPI.reload("data-v-7f9713cb", __vue__options__);
+    }
+  })();
+}
+},{"vueify/lib/insert-css":16,"vue-hot-reload-api":14,"vue":8}],9:[function(require,module,exports) {
+'use strict';
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _index = require('../views/index.vue');
+
+var _index2 = _interopRequireDefault(_index);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+exports.default = [{
+  path: '/',
+  component: _index2.default
+}];
+},{"../views/index.vue":22}],6:[function(require,module,exports) {
+'use strict';
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _vueRouter = require('vue-router');
+
+var _vueRouter2 = _interopRequireDefault(_vueRouter);
+
+var _routers = require('./routers.js');
+
+var _routers2 = _interopRequireDefault(_routers);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+exports.default = function () {
+  return new _vueRouter2.default({
+    routes: _routers2.default
+  });
+};
+},{"vue-router":13,"./routers.js":9}],19:[function(require,module,exports) {
 var __vueify_style_dispose__ = require("vueify/lib/insert-css").insert("header {\n    display: flex;\n    justify-content: space-between;\n    text-align: center;\n    background-color: rgba(0,0,0,.3);\n    color: #fff;\n    padding: 0 20px;\n}\nheader h1{\n    font-size: 24px;\n    margin: 0;\n    padding: 0;\n    text-shadow: 1px 1px 3px #fff;\n}\nheader ul{\n    padding: 0;\n    margin: 0;\n    display: flex;\n    justify-content: center;\n    align-items: center;\n}\nheader ul li{\n    list-style: none;\n    padding: 0 5px;\n}\nheader ul li a{\n    color: #fff;\n    text-decoration: none;\n    font-weight: 300;\n    font-size: 14px;\n}");(function () {
   'use strict';
 
