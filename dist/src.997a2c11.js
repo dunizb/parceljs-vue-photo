@@ -9845,6 +9845,10 @@ exports.default = [{
   title: "北京",
   subTitle: "故宫·八达岭长城·颐和园",
   url: "http://img2.ph.126.net/ypuq6DoIvjBNvm33-GDP3w==/6598164880239625367.jpg"
+}, {
+  title: "杭州",
+  subTitle: "杭州与西湖",
+  url: "https://img2.ph.126.net/ehOOvZNDc5cIhulgXbagaw==/1067353111786839398.jpg"
 }];
 },{}],12:[function(require,module,exports) {
 var Vue // late bind
@@ -10133,7 +10137,7 @@ if (module.hot) {
   })();
 }
 },{"vueify/lib/insert-css":16,"vue-hot-reload-api":12,"vue":6}],13:[function(require,module,exports) {
-var __vueify_style_dispose__ = require("vueify/lib/insert-css").insert("/* line 66, stdin */\nmain[data-v-7f9713cb] {\n  margin-top: 10px; }\n\n/* line 70, stdin */\n.wrapper[data-v-7f9713cb] {\n  display: flex;\n  justify-content: space-between;\n  flex-wrap: wrap;\n  max-width: 1020px;\n  margin: 0 auto; }\n  /* line 76, stdin */\n  .wrapper .box[data-v-7f9713cb] {\n    display: flex;\n    flex-direction: column;\n    width: 33%;\n    height: 33%;\n    margin-bottom: 5px;\n    background-color: #fff; }\n    /* line 83, stdin */\n    .wrapper .box .names[data-v-7f9713cb] {\n      text-align: center;\n      font-size: 14px; }\n      /* line 86, stdin */\n      .wrapper .box .names .name[data-v-7f9713cb] {\n        font-size: 13px;\n        font-weight: 300; }\n\n/* line 94, stdin */\n.progress-wrapper[data-v-7f9713cb] {\n  position: fixed;\n  top: 0;\n  left: 0;\n  right: 0;\n  bottom: 0;\n  z-index: 100;\n  background-color: #fff;\n  display: flex;\n  flex-direction: column;\n  justify-content: center; }\n\n/* line 107, stdin */\nimg[data-v-7f9713cb] {\n  width: 100%;\n  height: 100%; }");(function () {
+var __vueify_style_dispose__ = require("vueify/lib/insert-css").insert("/* line 68, stdin */\nmain[data-v-7f9713cb] {\n  margin-top: 10px; }\n\n/* line 72, stdin */\n.wrapper[data-v-7f9713cb] {\n  display: flex;\n  justify-content: space-between;\n  flex-wrap: wrap;\n  max-width: 1020px;\n  margin: 0 auto; }\n  /* line 78, stdin */\n  .wrapper .box[data-v-7f9713cb] {\n    display: flex;\n    flex-direction: column;\n    width: 33%;\n    height: 33%;\n    margin-bottom: 5px;\n    background-color: #fff; }\n    /* line 85, stdin */\n    .wrapper .box .img-box[data-v-7f9713cb] {\n      max-height: 161px; }\n    /* line 88, stdin */\n    .wrapper .box .names[data-v-7f9713cb] {\n      text-align: center;\n      font-size: 14px; }\n      /* line 91, stdin */\n      .wrapper .box .names .name[data-v-7f9713cb] {\n        font-size: 13px;\n        font-weight: 300; }\n\n/* line 99, stdin */\n.progress-wrapper[data-v-7f9713cb] {\n  position: fixed;\n  top: 0;\n  left: 0;\n  right: 0;\n  bottom: 0;\n  z-index: 100;\n  background-color: #fff;\n  display: flex;\n  flex-direction: column;\n  justify-content: center; }\n\n/* line 112, stdin */\nimg[data-v-7f9713cb] {\n  width: 100%;\n  height: 100%;\n  min-height: 161px; }");(function () {
   'use strict';
 
   Object.defineProperty(exports, "__esModule", {
@@ -10203,7 +10207,7 @@ if (__vue__options__.functional) {
 }
 __vue__options__.render = function render() {
   var _vm = this;var _h = _vm.$createElement;var _c = _vm._self._c || _h;return _c('main', [_c('div', { staticClass: "wrapper" }, _vm._l(_vm.albumList, function (item) {
-    return _c('div', { key: item.url, staticClass: "box" }, [_c('img', { attrs: { "src": item.url, "alt": "照片" } }), _vm._v(" "), _c('div', { staticClass: "names" }, [_c('div', { staticClass: "main-name" }, [_vm._v(_vm._s(item.title))]), _vm._v(" "), _c('div', { staticClass: "name" }, [_vm._v(_vm._s(item.subTitle))])])]);
+    return _c('div', { key: item.url, staticClass: "box" }, [_c('div', { staticClass: "img-box" }, [_c('img', { attrs: { "src": item.url, "alt": "照片" } })]), _vm._v(" "), _c('div', { staticClass: "names" }, [_c('div', { staticClass: "main-name" }, [_vm._v(_vm._s(item.title))]), _vm._v(" "), _c('div', { staticClass: "name" }, [_vm._v(_vm._s(item.subTitle))])])]);
   })), _vm._v(" "), _c('div', { directives: [{ name: "show", rawName: "v-show", value: _vm.isShowProgress, expression: "isShowProgress" }], staticClass: "progress-wrapper" }, [_c('Progress', { attrs: { "value": _vm.value } })], 1)]);
 };
 __vue__options__.staticRenderFns = [];
@@ -10218,7 +10222,7 @@ if (module.hot) {
     if (!module.hot.data) {
       hotAPI.createRecord("data-v-7f9713cb", __vue__options__);
     } else {
-      hotAPI.reload("data-v-7f9713cb", __vue__options__);
+      hotAPI.rerender("data-v-7f9713cb", __vue__options__);
     }
   })();
 }
@@ -10366,7 +10370,7 @@ if (__vue__options__.functional) {
   console.error("[vueify] functional components are not supported and should be defined in plain js files using render functions.");
 }
 __vue__options__.render = function render() {
-  var _vm = this;var _h = _vm.$createElement;var _c = _vm._self._c || _h;return _c('div', [_c('Header'), _vm._v(" "), _c('router-view'), _vm._v(" "), _c('Footer')], 1);
+  var _vm = this;var _h = _vm.$createElement;var _c = _vm._self._c || _h;return _c('div', [_c('Header'), _vm._v(" "), _c('keep-alive', [_c('router-view')], 1), _vm._v(" "), _c('Footer')], 1);
 };
 __vue__options__.staticRenderFns = [];
 if (module.hot) {
@@ -10378,7 +10382,7 @@ if (module.hot) {
     if (!module.hot.data) {
       hotAPI.createRecord("data-v-0b324c0a", __vue__options__);
     } else {
-      hotAPI.reload("data-v-0b324c0a", __vue__options__);
+      hotAPI.rerender("data-v-0b324c0a", __vue__options__);
     }
   })();
 }

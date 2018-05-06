@@ -13,5 +13,10 @@ export default [
     title: "北京",
     subTitle: "故宫·八达岭长城·颐和园",
     url: "http://img2.ph.126.net/ypuq6DoIvjBNvm33-GDP3w==/6598164880239625367.jpg"
+  },
+  {
+    title: "杭州",
+    subTitle: "杭州与西湖",
+    url: "https://img2.ph.126.net/ehOOvZNDc5cIhulgXbagaw==/1067353111786839398.jpg"
   }
 ]
