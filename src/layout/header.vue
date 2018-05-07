@@ -1,7 +1,7 @@
 <template>
   <header>
     <router-link to="/" tag="div">
-      <h1>Photo</h1>
+      <h1>相册</h1>
     </router-link>
     <ul>
       <li>
@@ -65,6 +65,9 @@ header {
         font-weight: 300;
         font-size: 14px;
         font-family: Arial, Helvetica, sans-serif;
+        &:hover {
+          text-shadow: 1px 1px 3px #fff;
+        }
       }
     }
   }
