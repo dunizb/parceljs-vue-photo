@@ -2,7 +2,7 @@
   <div>
     <Header />
     <keep-alive>
-      <transition name="fade">
+      <transition name="slide-left" mode="in-out">
         <router-view />
       </transition>
     </keep-alive>
