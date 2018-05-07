@@ -5,13 +5,10 @@
         :key="item.id"
         @click="showList(item.id)">
         <div class="img-box">
-          <img :src="item.url" alt="照片">
+          <img :src="domain+item.url" alt="照片">
           <span class="count">{{item.list.length}}</span>
         </div>
-        <div class="names">
-          <div class="main-name">{{item.title}}</div>
-          <div class="name">{{item.subTitle}}</div>
-        </div>
+        <div class="names">{{item.title}}</div>
       </div>
     </div>
 
@@ -35,6 +32,7 @@ export default {
   },
   data() {
     return {
+      domain: "https://dunizb.b0.upaiyun.com/",
       albumList: albumData,
       value: 0,
       isShowProgress: true
@@ -98,8 +96,10 @@ main{
     margin-bottom: 5px;
     background-color: #fff;
     padding: 5px 5px 0 5px;
+    box-sizing: border-box;
     .img-box{
       position: relative;
+      height: 245px;
       .count {
         position: absolute;
         right: 10px;
@@ -111,10 +111,6 @@ main{
     .names{
       text-align: center;
       font-size: 14px;
-      .name{
-        font-size: 13px;
-        font-weight: 300;
-      }
     }
     &:hover{
       cursor: pointer;

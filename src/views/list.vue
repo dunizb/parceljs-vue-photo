@@ -1,7 +1,7 @@
 <template>
   <div class="list-wrapper">
     <div v-for="item in list" :key="item.url">
-      <img :src="item.url" alt="" :style="imgstyle">
+      <img :src="domain+item.url" alt="" :style="imgstyle">
       <div class="title">👆{{item.title}}</div>
     </div>
     
@@ -14,6 +14,7 @@ export default {
   props: ['id'],
   data() {
     return {
+      domain: "https://dunizb.b0.upaiyun.com/",      
       list: JSON.parse(sessionStorage.getItem('dunizb.com_photo_list')||'[]'),
       imgstyle: {
         height: ''
@@ -35,16 +36,16 @@ export default {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding: 10px;
     background-color: #000;
-  }
-  img{
-    width: 100%;
-    height: 100%;
+    max-width: 1024px;
+    margin: 0 auto;
   }
   .title {
     background-color: #fff;
     text-align: center;
+  }
+  img {
+    width: 100%;
   }
 </style>
 

@@ -48,19 +48,13 @@ a{
     .wrapper{
       padding: 2px 2px 0 2px;
       .box{
-        width: 49.60% !important;
-        height: 49.60% !important;
+        width: 49.5% !important;
         margin-bottom: 2px;
         .img-box{
-          height: 150px;
+          height: 150px !important;
         }
         .names{
-          .main-name{
-            display:none;
-          }
-          .name{
-            font-size: 12px !important;
-          }
+          font-size: 12px !important;
         }
       }
     }

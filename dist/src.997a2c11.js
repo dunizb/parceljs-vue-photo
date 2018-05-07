@@ -68,7 +68,7 @@ require = (function (modules, cache, entry) {
 
   // Override the current require with this new one
   return newRequire;
-})({7:[function(require,module,exports) {
+})({6:[function(require,module,exports) {
 var global = arguments[3];
 'use strict';
 
@@ -7349,7 +7349,7 @@ if (inBrowser) {
 /*  */
 
 exports.default = Vue;
-},{}],8:[function(require,module,exports) {
+},{}],7:[function(require,module,exports) {
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -9802,7 +9802,7 @@ if (inBrowser && window.Vue) {
 }
 
 exports.default = VueRouter;
-},{}],15:[function(require,module,exports) {
+},{}],16:[function(require,module,exports) {
 var inserted = exports.cache = {}
 
 function noop () {}
@@ -9835,18 +9835,60 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.default = [{
   id: "1",
-  title: "相册1",
-  subTitle: "大理·丽江·泸沽湖",
-  url: "https://thumbnail10.baidupcs.com/thumbnail/8f8e19ae42addfdff73980c53b5bcc40?fid=1510528803-250528-154259415507334&time=1525622400&rt=sh&sign=FDTAER-DCb740ccc5511e5e8fedcff06b081203-xRT%2BgL8GruzsFw93dKaZWUcFucc%3D&expires=8h&chkv=0&chkbd=0&chkpc=&dp-logid=2922789798549355172&dp-callid=0&size=c10000_u10000&quality=90&vuk=-&ft=video",
+  title: "大理·古城·洱海",
+  url: "demo/photo/star1/dali/dali00.jpg",
   list: [{
-    title: "丽江古城一角",
-    url: "https://thumbnail10.baidupcs.com/thumbnail/8f8e19ae42addfdff73980c53b5bcc40?fid=1510528803-250528-154259415507334&time=1525622400&rt=sh&sign=FDTAER-DCb740ccc5511e5e8fedcff06b081203-xRT%2BgL8GruzsFw93dKaZWUcFucc%3D&expires=8h&chkv=0&chkbd=0&chkpc=&dp-logid=2922789798549355172&dp-callid=0&size=c10000_u10000&quality=90&vuk=-&ft=video"
+    title: "大理",
+    url: "demo/photo/star1/dali/dali00.jpg"
   }, {
-    title: "丽江古城一角",
-    url: "https://thumbnail10.baidupcs.com/thumbnail/5c3f1b639e0c5a2b07d11e0b377c7bb2?fid=1510528803-250528-538930992184900&time=1525622400&rt=sh&sign=FDTAER-DCb740ccc5511e5e8fedcff06b081203-SYjKdHBrT%2BTSU7JclKebkj18JQ0%3D&expires=8h&chkv=0&chkbd=0&chkpc=&dp-logid=2922909868532051414&dp-callid=0&size=c10000_u10000&quality=90&vuk=-&ft=video"
+    title: "大理崇圣寺三塔公园",
+    url: "demo/photo/star1/dali/dali02.jpeg"
   }, {
-    title: "丽江古城一角",
-    url: "https://thumbnail10.baidupcs.com/thumbnail/951eb9f531901122d6b1fae19ed17838?fid=1510528803-250528-178989460514957&time=1525622400&rt=sh&sign=FDTAER-DCb740ccc5511e5e8fedcff06b081203-3krVqDC5v6kZl1NkomLPmhuymbU%3D&expires=8h&chkv=0&chkbd=0&chkpc=&dp-logid=2922909868532051414&dp-callid=0&size=c10000_u10000&quality=90&vuk=-&ft=video"
+    title: "大理崇圣寺三塔公园",
+    url: "demo/photo/star1/dali/santa3.jpeg"
+  }, {
+    title: "大理崇圣寺三塔公园",
+    url: "demo/photo/star1/dali/dali01.jpeg"
+  }, {
+    title: "洱海",
+    url: "demo/photo/star1/dali/dali03.jpeg"
+  }, {
+    title: "洱海",
+    url: "demo/photo/star1/dali/dali04.jpeg"
+  }, {
+    title: "大理古城",
+    url: "demo/photo/star1/dali/dali07.jpg"
+  }, {
+    title: "大理古城",
+    url: "demo/photo/star1/dali/dali08.jpeg"
+  }, {
+    title: "洱海",
+    url: "demo/photo/star1/dali/erhai01.jpeg"
+  }, {
+    title: "洱海",
+    url: "demo/photo/star1/dali/erhai02.jpg"
+  }, {
+    title: "洱海",
+    url: "demo/photo/star1/dali/erhai03.jpg"
+  }, {
+    title: "洱海",
+    url: "demo/photo/star1/dali/erhai04.jpg"
+  }]
+}, {
+  id: "2",
+  title: "丽江·丽江古城",
+  url: "demo/photo/star1/lijianggucheng/0.jpeg",
+  list: [{
+    title: "丽江古城",
+    url: "demo/photo/star1/lijianggucheng/0.jpeg"
+  }]
+}, {
+  id: "3",
+  title: "泸沽湖",
+  url: "demo/photo/star1/luguhu/0.jpeg",
+  list: [{
+    title: "泸沽湖",
+    url: "demo/photo/star1/luguhu/0.jpeg"
   }]
 }];
 },{}],12:[function(require,module,exports) {
@@ -10135,8 +10177,8 @@ if (module.hot) {
     }
   })();
 }
-},{"vueify/lib/insert-css":15,"vue-hot-reload-api":12,"vue":7}],13:[function(require,module,exports) {
-var __vueify_style_dispose__ = require("vueify/lib/insert-css").insert("/* line 83, stdin */\nmain[data-v-7f9713cb] {\n  padding-top: 45px; }\n\n/* line 87, stdin */\n.wrapper[data-v-7f9713cb] {\n  display: flex;\n  justify-content: space-between;\n  flex-wrap: wrap;\n  max-width: 1020px;\n  margin: 0 auto; }\n  /* line 93, stdin */\n  .wrapper .box[data-v-7f9713cb] {\n    display: flex;\n    flex-direction: column;\n    width: 33%;\n    height: 33%;\n    margin-bottom: 5px;\n    background-color: #fff;\n    padding: 5px 5px 0 5px; }\n    /* line 101, stdin */\n    .wrapper .box .img-box[data-v-7f9713cb] {\n      position: relative; }\n      /* line 103, stdin */\n      .wrapper .box .img-box .count[data-v-7f9713cb] {\n        position: absolute;\n        right: 10px;\n        bottom: 10px;\n        color: #fff;\n        font-size: 25px; }\n    /* line 111, stdin */\n    .wrapper .box .names[data-v-7f9713cb] {\n      text-align: center;\n      font-size: 14px; }\n      /* line 114, stdin */\n      .wrapper .box .names .name[data-v-7f9713cb] {\n        font-size: 13px;\n        font-weight: 300; }\n    /* line 119, stdin */\n    .wrapper .box[data-v-7f9713cb]:hover {\n      cursor: pointer; }\n\n/* line 125, stdin */\n.progress-wrapper[data-v-7f9713cb] {\n  position: fixed;\n  top: 0;\n  left: 0;\n  right: 0;\n  bottom: 0;\n  z-index: 100;\n  background-color: #fff;\n  display: flex;\n  flex-direction: column;\n  justify-content: center; }\n\n/* line 138, stdin */\nimg[data-v-7f9713cb] {\n  width: 100%;\n  height: 100%; }");(function () {
+},{"vueify/lib/insert-css":16,"vue-hot-reload-api":12,"vue":6}],13:[function(require,module,exports) {
+var __vueify_style_dispose__ = require("vueify/lib/insert-css").insert("/* line 81, stdin */\nmain[data-v-7f9713cb] {\n  padding-top: 45px; }\n\n/* line 85, stdin */\n.wrapper[data-v-7f9713cb] {\n  display: flex;\n  justify-content: space-between;\n  flex-wrap: wrap;\n  max-width: 1020px;\n  margin: 0 auto; }\n  /* line 91, stdin */\n  .wrapper .box[data-v-7f9713cb] {\n    display: flex;\n    flex-direction: column;\n    width: 33%;\n    height: 33%;\n    margin-bottom: 5px;\n    background-color: #fff;\n    padding: 5px 5px 0 5px;\n    box-sizing: border-box; }\n    /* line 100, stdin */\n    .wrapper .box .img-box[data-v-7f9713cb] {\n      position: relative;\n      height: 245px; }\n      /* line 103, stdin */\n      .wrapper .box .img-box .count[data-v-7f9713cb] {\n        position: absolute;\n        right: 10px;\n        bottom: 10px;\n        color: #fff;\n        font-size: 25px; }\n    /* line 111, stdin */\n    .wrapper .box .names[data-v-7f9713cb] {\n      text-align: center;\n      font-size: 14px; }\n    /* line 115, stdin */\n    .wrapper .box[data-v-7f9713cb]:hover {\n      cursor: pointer; }\n\n/* line 121, stdin */\n.progress-wrapper[data-v-7f9713cb] {\n  position: fixed;\n  top: 0;\n  left: 0;\n  right: 0;\n  bottom: 0;\n  z-index: 100;\n  background-color: #fff;\n  display: flex;\n  flex-direction: column;\n  justify-content: center; }\n\n/* line 134, stdin */\nimg[data-v-7f9713cb] {\n  width: 100%;\n  height: 100%; }");(function () {
   'use strict';
 
   Object.defineProperty(exports, "__esModule", {
@@ -10164,6 +10206,7 @@ var __vueify_style_dispose__ = require("vueify/lib/insert-css").insert("/* line 
     },
     data: function data() {
       return {
+        domain: "https://dunizb.b0.upaiyun.com/",
         albumList: _albumData2.default,
         value: 0,
         isShowProgress: true
@@ -10220,7 +10263,7 @@ __vue__options__.render = function render() {
   var _vm = this;var _h = _vm.$createElement;var _c = _vm._self._c || _h;return _c('main', [_c('div', { staticClass: "wrapper" }, _vm._l(_vm.albumList, function (item) {
     return _c('div', { key: item.id, staticClass: "box", on: { "click": function click($event) {
           _vm.showList(item.id);
-        } } }, [_c('div', { staticClass: "img-box" }, [_c('img', { attrs: { "src": item.url, "alt": "照片" } }), _vm._v(" "), _c('span', { staticClass: "count" }, [_vm._v(_vm._s(item.list.length))])]), _vm._v(" "), _c('div', { staticClass: "names" }, [_c('div', { staticClass: "main-name" }, [_vm._v(_vm._s(item.title))]), _vm._v(" "), _c('div', { staticClass: "name" }, [_vm._v(_vm._s(item.subTitle))])])]);
+        } } }, [_c('div', { staticClass: "img-box" }, [_c('img', { attrs: { "src": _vm.domain + item.url, "alt": "照片" } }), _vm._v(" "), _c('span', { staticClass: "count" }, [_vm._v(_vm._s(item.list.length))])]), _vm._v(" "), _c('div', { staticClass: "names" }, [_vm._v(_vm._s(item.title))])]);
   })), _vm._v(" "), _c('div', { directives: [{ name: "show", rawName: "v-show", value: _vm.isShowProgress, expression: "isShowProgress" }], staticClass: "progress-wrapper" }, [_c('Progress', { attrs: { "value": _vm.value } })], 1)]);
 };
 __vue__options__.staticRenderFns = [];
@@ -10239,8 +10282,8 @@ if (module.hot) {
     }
   })();
 }
-},{"vueify/lib/insert-css":15,"../common/js/albumData.js":17,"../components/progress/progress.vue":18,"vue-hot-reload-api":12,"vue":7}],14:[function(require,module,exports) {
-var __vueify_style_dispose__ = require("vueify/lib/insert-css").insert("/* line 34, stdin */\n.list-wrapper {\n  display: flex;\n  flex-direction: column;\n  justify-content: center;\n  padding: 10px;\n  background-color: #000; }\n\n/* line 41, stdin */\nimg {\n  width: 100%;\n  height: 100%; }\n\n/* line 45, stdin */\n.title {\n  background-color: #fff;\n  text-align: center; }");(function () {
+},{"vueify/lib/insert-css":16,"../common/js/albumData.js":17,"../components/progress/progress.vue":18,"vue-hot-reload-api":12,"vue":6}],14:[function(require,module,exports) {
+var __vueify_style_dispose__ = require("vueify/lib/insert-css").insert("/* line 35, stdin */\n.list-wrapper {\n  display: flex;\n  flex-direction: column;\n  justify-content: center;\n  background-color: #000;\n  max-width: 1024px;\n  margin: 0 auto; }\n\n/* line 43, stdin */\n.title {\n  background-color: #fff;\n  text-align: center; }\n\n/* line 47, stdin */\nimg {\n  width: 100%; }");(function () {
   'use strict';
 
   Object.defineProperty(exports, "__esModule", {
@@ -10251,6 +10294,7 @@ var __vueify_style_dispose__ = require("vueify/lib/insert-css").insert("/* line 
     props: ['id'],
     data: function data() {
       return {
+        domain: "https://dunizb.b0.upaiyun.com/",
         list: JSON.parse(sessionStorage.getItem('dunizb.com_photo_list') || '[]'),
         imgstyle: {
           height: ''
@@ -10272,7 +10316,7 @@ if (__vue__options__.functional) {
 }
 __vue__options__.render = function render() {
   var _vm = this;var _h = _vm.$createElement;var _c = _vm._self._c || _h;return _c('div', { staticClass: "list-wrapper" }, _vm._l(_vm.list, function (item) {
-    return _c('div', { key: item.url }, [_c('img', { style: _vm.imgstyle, attrs: { "src": item.url, "alt": "" } }), _vm._v(" "), _c('div', { staticClass: "title" }, [_vm._v("👆" + _vm._s(item.title))])]);
+    return _c('div', { key: item.url }, [_c('img', { style: _vm.imgstyle, attrs: { "src": _vm.domain + item.url, "alt": "" } }), _vm._v(" "), _c('div', { staticClass: "title" }, [_vm._v("👆" + _vm._s(item.title))])]);
   }));
 };
 __vue__options__.staticRenderFns = [];
@@ -10290,7 +10334,7 @@ if (module.hot) {
     }
   })();
 }
-},{"vueify/lib/insert-css":15,"vue-hot-reload-api":12,"vue":7}],9:[function(require,module,exports) {
+},{"vueify/lib/insert-css":16,"vue-hot-reload-api":12,"vue":6}],8:[function(require,module,exports) {
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -10337,7 +10381,7 @@ exports.default = function () {
     routes: _routers2.default
   });
 };
-},{"vue-router":8,"./routers.js":9}],10:[function(require,module,exports) {
+},{"vue-router":7,"./routers.js":8}],9:[function(require,module,exports) {
 var __vueify_style_dispose__ = require("vueify/lib/insert-css").insert("/* line 33, stdin */\nheader {\n  display: flex;\n  justify-content: space-between;\n  text-align: center;\n  background-color: rgba(0, 0, 0, 0.3);\n  color: #fff;\n  padding: 0 20px;\n  position: fixed;\n  width: 100%; }\n  /* line 42, stdin */\n  header h1 {\n    font-size: 24px;\n    margin: 0;\n    padding: 0;\n    text-shadow: 1px 1px 3px #fff; }\n    /* line 47, stdin */\n    header h1:hover {\n      cursor: pointer; }\n  /* line 51, stdin */\n  header ul {\n    padding: 0;\n    margin: 0;\n    display: flex;\n    justify-content: center;\n    align-items: center;\n    margin-right: 30px; }\n    /* line 58, stdin */\n    header ul li {\n      list-style: none;\n      padding: 0 5px; }\n      /* line 61, stdin */\n      header ul li a {\n        color: #fff;\n        text-decoration: none;\n        font-weight: 300;\n        font-size: 14px;\n        font-family: Arial, Helvetica, sans-serif; }");(function () {
   'use strict';
 
@@ -10373,8 +10417,8 @@ if (module.hot) {
     }
   })();
 }
-},{"vueify/lib/insert-css":15,"vue-hot-reload-api":12,"vue":7}],11:[function(require,module,exports) {
-var __vueify_style_dispose__ = require("vueify/lib/insert-css").insert("/* line 15, stdin */\nfooter {\n  margin: 40px;\n  text-align: center;\n  color: #eee;\n  font-size: 14px;\n  font-weight: 100;\n  position: relative; }\n  /* line 22, stdin */\n  footer::after {\n    content: ' ';\n    position: absolute;\n    width: 50%;\n    height: 10px;\n    top: -10px;\n    left: 50%;\n    margin-left: -25%;\n    border-top: 1px dotted #999; }\n\n/* line 33, stdin */\na {\n  color: #fff;\n  text-decoration: none; }\n\n/***** iPad Mini *****/\n@media only screen and (max-width: 768px) {\n  /* line 40, stdin */\n  header {\n    padding: 0 3px; }\n    /* line 42, stdin */\n    header ul {\n      margin-right: 0; }\n  /* line 46, stdin */\n  main {\n    margin-top: 0; }\n    /* line 48, stdin */\n    main .wrapper {\n      padding: 2px 2px 0 2px; }\n      /* line 50, stdin */\n      main .wrapper .box {\n        width: 49.60% !important;\n        height: 49.60% !important;\n        margin-bottom: 2px; }\n        /* line 54, stdin */\n        main .wrapper .box .img-box {\n          height: 150px; }\n        /* line 58, stdin */\n        main .wrapper .box .names .main-name {\n          display: none; }\n        /* line 61, stdin */\n        main .wrapper .box .names .name {\n          font-size: 12px !important; }\n  /* line 69, stdin */\n  footer {\n    font-size: 10px; } }");(function () {
+},{"vueify/lib/insert-css":16,"vue-hot-reload-api":12,"vue":6}],10:[function(require,module,exports) {
+var __vueify_style_dispose__ = require("vueify/lib/insert-css").insert("/* line 15, stdin */\nfooter {\n  margin: 40px;\n  text-align: center;\n  color: #eee;\n  font-size: 14px;\n  font-weight: 100;\n  position: relative; }\n  /* line 22, stdin */\n  footer::after {\n    content: ' ';\n    position: absolute;\n    width: 50%;\n    height: 10px;\n    top: -10px;\n    left: 50%;\n    margin-left: -25%;\n    border-top: 1px dotted #999; }\n\n/* line 33, stdin */\na {\n  color: #fff;\n  text-decoration: none; }\n\n/***** iPad Mini *****/\n@media only screen and (max-width: 768px) {\n  /* line 40, stdin */\n  header {\n    padding: 0 3px; }\n    /* line 42, stdin */\n    header ul {\n      margin-right: 0; }\n  /* line 46, stdin */\n  main {\n    margin-top: 0; }\n    /* line 48, stdin */\n    main .wrapper {\n      padding: 2px 2px 0 2px; }\n      /* line 50, stdin */\n      main .wrapper .box {\n        width: 49.5% !important;\n        margin-bottom: 2px; }\n        /* line 53, stdin */\n        main .wrapper .box .img-box {\n          height: 150px !important; }\n        /* line 56, stdin */\n        main .wrapper .box .names {\n          font-size: 12px !important; }\n  /* line 63, stdin */\n  footer {\n    font-size: 10px; } }");(function () {
   'use strict';
 
   Object.defineProperty(exports, "__esModule", {
@@ -10405,11 +10449,11 @@ if (module.hot) {
     if (!module.hot.data) {
       hotAPI.createRecord("data-v-429715fa", __vue__options__);
     } else {
-      hotAPI.reload("data-v-429715fa", __vue__options__);
+      hotAPI.rerender("data-v-429715fa", __vue__options__);
     }
   })();
 }
-},{"vueify/lib/insert-css":15,"vue-hot-reload-api":12,"vue":7}],3:[function(require,module,exports) {
+},{"vueify/lib/insert-css":16,"vue-hot-reload-api":12,"vue":6}],3:[function(require,module,exports) {
 ;(function () {
   'use strict';
 
@@ -10442,7 +10486,7 @@ if (__vue__options__.functional) {
   console.error("[vueify] functional components are not supported and should be defined in plain js files using render functions.");
 }
 __vue__options__.render = function render() {
-  var _vm = this;var _h = _vm.$createElement;var _c = _vm._self._c || _h;return _c('div', [_c('Header'), _vm._v(" "), _c('keep-alive', [_c('router-view')], 1), _vm._v(" "), _c('Footer')], 1);
+  var _vm = this;var _h = _vm.$createElement;var _c = _vm._self._c || _h;return _c('div', [_c('Header'), _vm._v(" "), _c('router-view'), _vm._v(" "), _c('Footer')], 1);
 };
 __vue__options__.staticRenderFns = [];
 if (module.hot) {
@@ -10454,11 +10498,11 @@ if (module.hot) {
     if (!module.hot.data) {
       hotAPI.createRecord("data-v-0b324c0a", __vue__options__);
     } else {
-      hotAPI.rerender("data-v-0b324c0a", __vue__options__);
+      hotAPI.reload("data-v-0b324c0a", __vue__options__);
     }
   })();
 }
-},{"./layout/header.vue":10,"./layout/footer.vue":11,"vue-hot-reload-api":12,"vue":7}],19:[function(require,module,exports) {
+},{"./layout/header.vue":9,"./layout/footer.vue":10,"vue-hot-reload-api":12,"vue":6}],15:[function(require,module,exports) {
 var bundleURL = null;
 function getBundleURLCached() {
   if (!bundleURL) {
@@ -10488,7 +10532,7 @@ function getBaseURL(url) {
 
 exports.getBundleURL = getBundleURLCached;
 exports.getBaseURL = getBaseURL;
-},{}],16:[function(require,module,exports) {
+},{}],11:[function(require,module,exports) {
 var bundle = require('./bundle-url');
 
 function updateLink(link) {
@@ -10519,13 +10563,13 @@ function reloadCSS() {
 }
 
 module.exports = reloadCSS;
-},{"./bundle-url":19}],5:[function(require,module,exports) {
+},{"./bundle-url":15}],5:[function(require,module,exports) {
 
         var reloadCSS = require('_css_loader');
         module.hot.dispose(reloadCSS);
         module.hot.accept(reloadCSS);
       
-},{"_css_loader":16}],2:[function(require,module,exports) {
+},{"_css_loader":11}],2:[function(require,module,exports) {
 'use strict';
 
 var _vue = require('vue');
@@ -10560,7 +10604,7 @@ new _vue2.default({
     return h(_app2.default);
   }
 }).$mount('#root');
-},{"vue":7,"vue-router":8,"./config/router.js":4,"./app.vue":3,"./assets/styles/global.css":5}],0:[function(require,module,exports) {
+},{"vue":6,"vue-router":7,"./config/router.js":4,"./app.vue":3,"./assets/styles/global.css":5}],0:[function(require,module,exports) {
 var global = (1, eval)('this');
 var OldModule = module.bundle.Module;
 function Module(config) {
@@ -10579,7 +10623,7 @@ function Module(config) {
 module.bundle.Module = Module;
 
 if (!module.bundle.parent && typeof WebSocket !== 'undefined') {
-  var ws = new WebSocket('ws://localhost:55634/');
+  var ws = new WebSocket('ws://localhost:49961/');
   ws.onmessage = function(event) {
     var data = JSON.parse(event.data);
 
