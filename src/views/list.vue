@@ -37,7 +37,7 @@ export default {
     }
     this.loadAlbums();
   },
-  watch: {
+  mounted(){
   },
   methods: {
     loadAlbums() {
@@ -63,7 +63,8 @@ export default {
 </script>
 
 <style lang="scss" scope>
-  body{
+  html,body{
+    height: 100%;
     max-width: 1280px !important;
     margin: 0 auto;
     -webkit-overflow-scrolling: touch;
@@ -95,10 +96,10 @@ export default {
 
   .progress-wrapper {
     position: fixed;
-    top: 0;
+    top:0;
+    bottom: 0;
     left: 0;
     right: 0;
-    bottom: 0;
     z-index: 100;
     background-color: #fff;
     display: flex;
@@ -114,6 +115,7 @@ export default {
     .items{
       .title {
         font-size: 10px;
+        background-color: transparent;
       }
     }
   }
