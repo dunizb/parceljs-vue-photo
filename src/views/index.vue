@@ -5,7 +5,7 @@
         :key="item.id"
         @click="showList(item.id)">
         <div class="img-box">
-          <img :src="domain+item.url" alt="照片">
+          <img :src="item.url" alt="照片">
           <span class="count">{{item.list.length}}</span>
         </div>
         <div class="names">{{item.title}}</div>
@@ -32,7 +32,6 @@ export default {
   },
   data() {
     return {
-      domain: "https://dunizb.b0.upaiyun.com/",
       albumList: albumData,
       value: 0,
       isShowProgress: true

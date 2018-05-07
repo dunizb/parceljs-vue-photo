@@ -1,7 +1,7 @@
 <template>
-  <div class="list-wrapper">
-    <div v-for="item in list" :key="item.url">
-      <img :src="domain+item.url" alt="" :style="imgstyle">
+  <div class="masonry">
+    <div v-for="item in list" :key="item.url" class="items">
+      <img :src="item.url" alt="" :style="imgstyle">
       <div class="title">👆{{item.title}}</div>
     </div>
     
@@ -13,8 +13,7 @@ export default {
   name: 'List',
   props: ['id'],
   data() {
-    return {
-      domain: "https://dunizb.b0.upaiyun.com/",      
+    return {     
       list: JSON.parse(sessionStorage.getItem('dunizb.com_photo_list')||'[]'),
       imgstyle: {
         height: ''
@@ -32,20 +31,33 @@ export default {
 </script>
 
 <style lang="scss" scope>
-  .list-wrapper{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    background-color: #000;
-    max-width: 1024px;
+  body{
+    max-width: 1280px !important;
     margin: 0 auto;
   }
-  .title {
-    background-color: #fff;
-    text-align: center;
+  .masonry{
+    background-color: #000;
+    padding: 70px 10px 10px 10px;
+    column-count: 3; // 列数
+    column-gap: 8; // 间距
   }
-  img {
-    width: 100%;
+  .items{
+    break-inside: avoid; 
+    box-sizing: border-box; 
+    margin-bottom: 10px;
+    position: relative;
+    .title {
+      position: absolute;
+      bottom: 4px;
+      width: 100%;
+      background-color:rgba(0,0,0,.3);
+      color: #fff;
+      text-align: center;
+    }
+    img {
+      width: 100%;
+    }
   }
+  
 </style>
 

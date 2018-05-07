@@ -38,6 +38,7 @@ header {
   color: #fff;
   padding: 0 20px;
   position: fixed;
+  z-index: 1000;
   width: 100%;
   h1{
     font-size: 24px;
