@@ -1,9 +1,11 @@
 <template>
   <div>
     <Header />
-    <!-- <keep-alive> -->
-      <router-view />
-    <!-- </keep-alive> -->
+    <keep-alive>
+      <transition name="fade">
+        <router-view />
+      </transition>
+    </keep-alive>
     <Footer />
   </div>
 </template>

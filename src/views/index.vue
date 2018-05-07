@@ -4,8 +4,8 @@
       <div class="box" v-for="item in indexData" 
         :key="item.id"
         @click="showList(item.id)">
-        <div class="img-box">
-          <img :src="item.url" alt="照片">
+        <div class="img-box" :style="{'background-image': 'url('+ item.url +')'}">
+          <!-- <img :src="item.url" alt="照片"> -->
           <span class="count">{{item.list.length}}</span>
         </div>
         <div class="names">{{item.title}}</div>
@@ -23,8 +23,6 @@
 import indexData from '../common/js/indexData.js'
 import Progress from '../components/progress/progress.vue'
 
-let count = 0;
-
 export default {
   name: 'Index',
   components: { 
@@ -32,6 +30,7 @@ export default {
   },
   data() {
     return {
+      count: 0,
       indexData: indexData,
       value: 0,
       isShowProgress: true
@@ -44,20 +43,20 @@ export default {
     loadAlbums() {
       this.indexData.forEach(item => {
         var imgObj = new Image();
-        imgObj.addEventListener('load error', this._handler());
+        imgObj.onload = () => this._handler();
         imgObj.src = item.url;
       });
     },
     _handler() {
-      this.value = Math.round(((count + 1)/this.indexData.length) * 100);
+      this.value = Math.round(((this.count + 1)/this.indexData.length) * 100);
       // 所有图片加载完毕
-      if(count >= this.indexData.length - 1) {
+      if(this.count >= this.indexData.length - 1) {
         setTimeout(() => {
           this.isShowProgress = false;
           this.count = 0;
         }, 500);
       }
-      count++;
+      this.count++;
     },
     showList(id) {
       const indexData = this.indexData;
@@ -99,6 +98,8 @@ main{
     .img-box{
       position: relative;
       height: 245px;
+      background-repeat: no-repeat;
+      background-size: 100% 100%;
       .count {
         position: absolute;
         right: 10px;
