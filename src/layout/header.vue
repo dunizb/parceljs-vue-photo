@@ -5,7 +5,7 @@
     </router-link>
     <ul>
       <li>
-        <a href="https://github.com/dunizb/VueTodo">源码</a>
+        <a href="https://github.com/dunizb/parceljs-vue-photo">源码</a>
       </li>
       <li>
         <a href="https://www.dunizb.com">博客</a>
