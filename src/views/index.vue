@@ -1,7 +1,7 @@
 <template>
   <main>
     <div class="wrapper">
-      <div class="box" v-for="item in albumList" 
+      <div class="box" v-for="item in indexData" 
         :key="item.id"
         @click="showList(item.id)">
         <div class="img-box">
@@ -20,7 +20,7 @@
 </template>
 
 <script>
-import albumData from '../common/js/albumData.js'
+import indexData from '../common/js/indexData.js'
 import Progress from '../components/progress/progress.vue'
 
 let count = 0;
@@ -32,7 +32,7 @@ export default {
   },
   data() {
     return {
-      albumList: albumData,
+      indexData: indexData,
       value: 0,
       isShowProgress: true
     }
@@ -42,16 +42,16 @@ export default {
   },
   methods: {
     loadAlbums() {
-      this.albumList.forEach(item => {
+      this.indexData.forEach(item => {
         var imgObj = new Image();
         imgObj.addEventListener('load error', this._handler());
         imgObj.src = item.url;
       });
     },
     _handler() {
-      this.value = Math.round(((count + 1)/this.albumList.length) * 100);
+      this.value = Math.round(((count + 1)/this.indexData.length) * 100);
       // 所有图片加载完毕
-      if(count >= this.albumList.length - 1) {
+      if(count >= this.indexData.length - 1) {
         setTimeout(() => {
           this.isShowProgress = false;
           this.count = 0;
@@ -60,11 +60,11 @@ export default {
       count++;
     },
     showList(id) {
-      const albumList = this.albumList;
+      const indexData = this.indexData;
       let list = []
-      for(let i = 0; i < albumList.length; i++) {
-        if(albumList[i].id === id) {
-          list = albumList[i].list;
+      for(let i = 0; i < indexData.length; i++) {
+        if(indexData[i].id === id) {
+          list = indexData[i].list;
           break;
         }
       }
