@@ -5,10 +5,13 @@
 
 **技术点**
 
-- Parcel零配置打包工具
-- Parcel结合Vue,VueRouter,Sass,Babel等
-- CSS3瀑布流效果
-- 图片预加载
+:gear: Parcel零配置打包工具
+
+:handshake: Parcel结合Vue,VueRouter,Sass,Babel等
+
+:shower: CSS3瀑布流效果
+
+:framed_picture: 图片预加载
 
 **在线预览**
 
