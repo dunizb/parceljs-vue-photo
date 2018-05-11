@@ -20,16 +20,19 @@
   "author": "Dunizb",
   "license": "ISC",
   "devDependencies": {
+    "@vue/component-compiler-utils": "^1.2.1",
     "autoprefixer": "^8.4.1",
     "node-sass": "^4.9.0",
     "parcel-bundler": "^1.8.1",
-    "postcss-modules": "^1.1.0"
+    "parcel-plugin-vue": "^1.5.0",
+    "postcss-modules": "^1.1.0",
+    "vue-template-compiler": "^2.5.16"
   },
   "dependencies": {
     "babel-preset-env": "^1.6.1",
     "common": "^0.2.5",
-    "parcel-plugin-vue": "^1.5.0",
     "vue": "^2.5.16",
+    "vue-hot-reload-api": "^2.3.0",
     "vue-router": "^3.0.1"
   }
 }
